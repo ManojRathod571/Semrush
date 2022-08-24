@@ -1,0 +1,117 @@
+#semrush{
+    /* border: 1px solid ; */
+    width: 80%;
+    display: grid;
+    grid-template-columns:40% 40% ;
+    gap: 20%;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 5%;
+}
+#semrush_left{
+    /* border: 1px solid green; */
+    height: auto;
+}
+#semrush_left>h1{
+    font-size: 48px;
+    font-family: Factor A,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+#semrush_left>h3{
+    font-family: Inter,sans-serif;
+    line-height: 30px;
+    font-weight: 200;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    font-size: 20px;
+    color: #171a22
+}
+#semrush_left>button{
+    height: 56px;
+    width: 233px;
+    background-color: #FF622D;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 10px;
+    border: transparent;
+}
+
+
+#semrush_right{
+    /* border: 1px solid  red; */
+    background: url("https://cdn.semrush.com/features/static/redesign/images-assets/arrow_bg.780b9db4d3cc.svg") no-repeat; 
+    background-size: contain;
+    /* animation: rotate-and-bounce .7s forwards; */
+    height: 417px;
+    /* width: 100%; */
+    position: relative;
+    /* top: 0; */
+    /* right: 10%; */
+}
+#semrush_right>img:nth-child(2){
+
+    /* border: 1px solid yellow; */
+    height: 100%;
+    /* width: 350px; */
+    position: absolute;
+    top: 8px;
+    left: 0;
+    animation: float 8s linear .2s;
+    transform: scale(1) translate(-2px,-8px);
+}
+#main_interest{
+    width: 80%;
+    margin: auto;
+    padding-left: 5%;
+}
+#main_top>div{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    gap: 15px;
+}
+#main_top>div>button{
+    font-family: Arial;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    height: 42px;
+    border-radius:50px;
+    border: 1px solid grey;
+    padding: 7px 27px 7px 27px;
+}
+#interest_container{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+    margin-top: 40px;
+}
+#interest_container>div{
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 28px 24px 28px;
+}
+#interest_container>div>div:last-child{
+    /* border: 1px solid red; */
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    justify-content: space-between;
+    align-items: center;
+}
+#interest_container>div>div:last-child>button{
+    background-color: rgb(246, 246, 246);
+    height: 28px;
+    border-radius: 5px;
+    border: transparent;
+    padding: 2px 7px 2px 7px;
+    line-height: 17px;
+    font-size: 14px;
+}
