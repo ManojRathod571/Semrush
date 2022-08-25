@@ -1,0 +1,110 @@
+
+
+#parent{
+    height: 50px;
+    width: 20%;
+    border: opx;
+}
+#parent img{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+#parent1 img{
+    width: 50%;
+    background-color: #C7FA73;
+    height: 180%;
+   margin-right: -120px;
+}
+#parent1{
+    width: 200%;
+    margin-top: -60px;
+    height: 400px;
+
+}
+#day{
+    font-family: Factor A,sans-serif;  
+    font-size: 24px;
+    font-weight: 700;
+}
+#parent2, #cvc{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+
+}
+#input{
+    width: 50%;
+    height: 400px;
+    border: 0px;
+    margin: auto;
+    margin-top: 20px;
+}
+.input1:focus{
+    outline: none;
+border-color:#80bdff;
+
+}
+.input1{
+    border-radius: 6px;
+    padding: 8px 12px;
+    border-color: #63abee;
+    border: 1px solid #a6b0b3;
+    margin-top: 20px;
+    width: 100%;
+}
+.input2{
+    width: 50%;
+    text-align: center;
+   
+}
+.input3{
+    width: 70%;
+    text-align: center;
+}
+.icon{
+    padding-left: 35px;
+    background: url("https://static.vecteezy.com/system/resources/previews/005/545/335/non_2x/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg") no-repeat left;
+    background-size: 35px;
+}
+.select2{
+    height: 42px;
+    --font-size-xl: 16px;
+    border-radius: 4px;
+    padding: 0 8px 0 12px;
+    border: 1px solid #a6b0b3;
+    width: 100%;
+    margin-top: 20px;
+}
+#btn{
+    background-color: #fc6c34;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    --font-family-regular: Inter,sans-serif;
+    margin-top: 20px;
+    height: 42px;
+    text-align: center;
+    width: 50%;
+    border: 0;
+    margin-left: 70px;
+}
+#line1{
+    margin-top: 30px;
+}
+#last{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+justify-content: space-evenly;
+
+}
+#lastp{
+    color:#6c6e79 ;
+   margin-bottom: -30px;
+}
+#lock{
+    width: 20%;
+}
+#lastp1{
+    margin-left: -120px;
+}
+
