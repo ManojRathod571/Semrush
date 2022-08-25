@@ -13,7 +13,9 @@
     display: flex;
     justify-content: space-between;
 }
-
+#span{
+    margin-top: 20px;
+}
 #pricing{
 width: 40%;
 border: 0px;
@@ -21,6 +23,56 @@ display: inline-flex;
 vertical-align: middle;
 align-items: center;
 position: relative;
+margin-top: 20px;
+}
+.container1, .container2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 10px;
+    display: flex;
+    
+}
+.container1 .toggle, .container2 .toggle2{
+   
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 30px;
+    background: #444;
+    border-radius: 30px;
+    margin-right: 350px;
+    transition: 0.3%;
+  
+}
+.container1 .toggle .toggle-button, .container2 .toggle2 .toggle-button2{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3%;
+}
+.container1 .toggle.active{
+    background-color: #FF642D;
+}
+.container1 .toggle.active .toggle-button{
+    left: 25px;
+}
+.container3 .toggle3{
+    margin-right: 900px; 
+   
+}
+
+.container2 .toggle2.active{
+    background-color: #FF642D;
+}
+.container2 .toggle2.active .toggle-button2{
+    left: 25px;
 }
 #save{
     display: inline-flex;
@@ -99,7 +151,7 @@ position: relative;
     margin-top: 12px;
     margin-bottom: 16px;
 }
-.dollar{
+.dollar, .dollar1, .dollar2, .dollar3, .dollar4, .dollar5{
     font-size: 42px;
     line-height: 50px;
     margin-right: 6px;
@@ -108,7 +160,7 @@ position: relative;
     font-weight: 700;
     
 }
-.decimal{
+.decimal, .decimal1, .decimal2{
     font-size: 16px;
     line-height: 16px;
     grid-area: decimal;
@@ -137,13 +189,13 @@ position: relative;
     font-size: 16px;
   border: 0;
 }
-.or{
+.or, .or1, .or2, .or3, .or4, .or5{
     display: block;
     margin-top: 8px;
     transition: height ease-in-out .2s;
     font-size: 16px;
 }
-.subs{
+.subs, .subs1, .subs2, .subs3, .subs4, .subs5{
     color: #FF642D;
     border: 0;
     background-color: white;
@@ -304,4 +356,62 @@ margin-top: -20px;
     padding-bottom: 1.3rem;
     transition: all .3s ease-in;
    }
+   #last{
+    width: 80%;
+    height: 400px;
+    border: 0px;
+    margin: auto;
+    border: 1px solid red;
+  
+   margin-top: 40px;
+  
+    background: rgba(110,219,255,.16);
+    border-radius: 16px;
+    padding: 40px 20px 56px;
+    box-sizing: border-box;
+    text-align: center;
+   }
+   #btnimg1 img{
+    width: 20%;
+    height: 20px;
+   }
+  #btnimg1{
+    background-color: transparent;
+    width: 20%;
+    margin-left: -150px;
+    border: 0;
+  }
+  #five{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    height: 40px;
+    border: 0;
+  }
+  #btnimg2{
+    background-color:transparent;
+    width: 20%;
+    border: 0;
+  }
+  #btnimg2 img{
+    width: 20%;
+    height: 30px;
+    
+  } 
+  #last1{
+    text-align: center;
+    margin-left: 80px;
+
+  }
+  #para{
+    font-family: "Factor A",Arial,Helvetica,sans-serif;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
 
