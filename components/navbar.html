@@ -11,115 +11,145 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <style>
+      /* style for the css menu dropdown container */
+      .menu {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        text-align: left;
+      }
+
+      /* style for the button */
+      .menu:before {
+        padding: 5px 10px;
+        color: white;
+      }
+      #resources_div:before{
+        content: "Resources";
+      }
+     #company_div:before{
+        content: "Company";
+      } 
+       #appCenter_div:before{
+        content: "App Center";
+      }
+      #extraTools_div:before{
+        content: "Extra tools";
+      }
+
+      .menu:focus {
+        pointer-events: none;
+      }
+
+      /* If :focus detected the dropdown menu is displayed by making it visible */
+      .menu:focus .menu-dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* style for the dropdown box */
+      .menu-dropdown {
+        background-color: #364656;
+        width: auto;
+        margin: 3px 0 0 0;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px black solid;
+        border-radius: 3px;
+        pointer-events: auto;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 1s;
+        background: #1f8bd3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* style the links in the dropdown */
+      .menu-dropdown a {
+        background: transparent;
+        border: none;
+        outline: 0;
+        display: block;
+        color: white;
+        text-decoration: none;
+        width: 160px;
+        padding: 5px;
+      }
+    </style>
   </head>
   <body>
     <div id="navBar_div">
-      <div id="main_navBar_div">
-            <div id="logo-div">
-                <img src="https://cdnwebsite.databox.com/wp-content/uploads/2021/03/30054559/SEMrush-logo.png" alt="">
-            </div>
-            <div id="menu_link">
-
-            </div>
+      <div
+        id="main_navBar_div"
+        style="background-color: black; height: 50px; display: flex"
+      >
+        <div id="logo-div">
+          <img
+            style="width: 125px"
+            src="https://cdnwebsite.databox.com/wp-content/uploads/2021/03/30054559/SEMrush-logo.png"
+            alt=""
+          />
         </div>
-      <!-- <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                 href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Resources
-                </a> 
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Company
-                </a> 
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                 href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  App Center
-                </a> 
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                 href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                Extra tools
-                </a> 
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <div id="menu_link">
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <div tabindex="0" class="menu" id="resources_div">
+            <div class="menu-dropdown">
+              <a href=""><h3>Blog</h3><p>Read the industry's latest thoughts on digital marketing, content strategy, SEO, PPC, social media and more.</p></a>
+              <a href=""><h3>Help Center</h3><p>Learn how to use Semrush with user manuals, how-to’s, videos and more!</p></a>
+              <a href=""><h3>What's New</h3><p>Keep track of the newest Semrush features and improvements.</p></a>
+              <a href=""><h3>Webinars</h3><p>Register and take part in educational webinars conducted by the best digital marketing experts.</p></a>
+              <a href=""><h3>Ebooks</h3><p>A range of downloadable guides in PDF format that can help you broaden your knowledge and improve your skills.</p></a>
+              <a href=""><h3>Hire a Trusted Agency</h3><p>Pressed for time? Need rare skills? Get help from a trusted agency. Our experts work with marketing projects of all kinds and budgets.</p></a>
+              <a href=""><h3>Academy</h3><p>Get vital SEO skills, learn how to use our toolkits and get official certificates of your proficiency in SEO and Semrush.</p></a>
+              <a href=""><h3>Top WEbsites</h3><p>Discover the most visited websites. Analyze their traffic and search rankings. Choose country or industry to find out who currently leads the market.</p></a>
+            </div>
           </div>
+          <div tabindex="0" class="menu" id="company_div">
+            <div class="menu-dropdown">
+              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
+              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
+              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
+              <a href="javascript:alert('No Javascript')">No Javascript</a>
+              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
+              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
+              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
+              <a href="javascript:alert('No Javascript')">No Javascript</a>
+            </div>
+          </div>
+          <div tabindex="0" class="menu" id="appCenter_div">
+            <div class="menu-dropdown">
+              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
+              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
+              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
+              <a href="javascript:alert('No Javascript')">No Javascript</a>
+              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
+              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
+              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
+              <a href="javascript:alert('No Javascript')">No Javascript</a>
+            </div>
+          </div>
+               <div tabindex="0" class="menu" id="extraTools_div">
+            <div class="menu-dropdown">
+              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
+              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
+              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
+              <a href="javascript:alert('No Javascript')">No Javascript</a>
+              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
+              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
+              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
+              <a href="javascript:alert('No Javascript')">No Javascript</a>
+            </div>
+          </div>    
         </div>
-      </nav> -->
+      </div>
     </div>
   </body>
 </html>
