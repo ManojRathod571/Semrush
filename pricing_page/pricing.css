@@ -1,5 +1,4 @@
 
-
 #nav{
     width: 100%;
     border: 1px solid black;
@@ -280,13 +279,18 @@ margin-top: -20px;
 }
 #compare{
     margin-left: 40px;
+  
 }
 #plans{
     font-size: 30px;
 }
 .main{
-    margin-top: 80px;
-    position: sticky;
+   
+    
+    top: 0;
+   
+    border: 1px solid red;
+    box-shadow: 5px 5px 25px rgb(137 141 154 / 30%);
 }
 #cont{
     font-family: "Factor A",Arial,Helvetica,sans-serif;
@@ -326,36 +330,12 @@ margin-top: -20px;
     margin-top: -120px;
    }
    .image{
-    width: 5%;
-    height: 1%;
+    width: 2%;
+    height: 10%;
     align-self: center;
-    margin-right: -650px;
+   
    }
-   .question_accorden{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-   }
-   .question_answer_accorden{
-    width: 350px;
-    border-bottom: 1px solid #e8e8ea;
-   }
-   .answer{
-    display: none;
-   }
-   .title_question{
-    margin: 1.4rem 0rem;
-   }
-   .question{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-   }
-   .active .answer{
-    display: block;
-    padding-bottom: 1.3rem;
-    transition: all .3s ease-in;
-   }
+
    #last{
     width: 80%;
     height: 400px;
@@ -414,4 +394,45 @@ margin-top: -20px;
     margin-left: 40px;
     margin-right: 50px;
   }
-
+.flexp{
+    display: flex;
+    justify-content: space-between;
+    border:1px solid #575c66;
+}
+#question{
+    width: 80%;
+}
+#collap{
+    width: 80%;
+    height: 600px;
+   border-radius: 10px;
+    border: 1px solid #575c66;
+    margin: auto;
+    margin-top: -100px;
+    margin-top: -20px;
+}
+.collapsible {
+    background-color:white;
+    color: #171a22;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-family: "Factor A",Arial,Helvetica,sans-serif,Impact;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: bold;
+ 
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+  }
+  #answer{
+    color:#575c66;
+  }

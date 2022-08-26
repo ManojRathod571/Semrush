@@ -22,16 +22,16 @@
         </h4>
         <p>Your Account:</p>
     <p>Billing:</p>
-    <input type="text" placeholder="Card Number" class="input1">
+    <input type="text" placeholder="Card Number" class="input1" id="card">
     <div id="cvc">
-        <input type="text" placeholder="MM / YY" class="input1 input3">
-        <input type="text" placeholder="CVC" class="input1 input2">
+        <input type="text" placeholder="MM / YY" class="input1 input3" id="month">
+        <input type="text" placeholder="CVC" class="input1 input2" id="cvc1">
     </div>
-    <input type="text" placeholder="Card holder" class="icon input1">
+    <input type="text" placeholder="Card holder" class="icon input1" id="name">
 
 
     <div class="search_select">
-    <select name="" class="select2"  data-live-search="true">
+    <select name="" class="select2"  data-live-search="true" id="selectoption">
         <option value="">State/UT</option>
         <option value="Andaman and Nicobar">Andaman and Nicobar</option>
 <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -46,8 +46,8 @@
     </select>
 </div>
 
-    <input type="text" placeholder="GSTIN" class="input1">
-    <button id="btn">Place the Order</button>
+    <input type="text" placeholder="GSTIN" class="input1" id="gst">
+    <button id="btn" onclick="order()">Place the Order</button>
     <hr id="line1">
     <div id="last">
         <div>
