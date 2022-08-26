@@ -18,7 +18,7 @@
 #parent1{
     width: 200%;
     margin-top: -60px;
-    height: 400px;
+    height: 800px;
 
 }
 #day{
@@ -29,7 +29,7 @@
 #parent2, #cvc{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-  
+
 
 }
 #input{
@@ -38,6 +38,7 @@
     border: 0px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 200px;
 }
 .input1:focus{
     outline: none;
