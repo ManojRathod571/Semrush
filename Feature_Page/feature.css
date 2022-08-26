@@ -6,7 +6,6 @@
     gap: 20%;
     margin: auto;
     margin-top: 50px;
-    padding-left: 5%;
 }
 #semrush_left{
     /* border: 1px solid green; */
@@ -50,22 +49,59 @@
     position: relative;
     /* top: 0; */
     /* right: 10%; */
+    animation: rotate-and-bounce .7s forwards;
+}
+@keyframes rotate-and-bounce{
+    0% {
+        transform: rotate(45deg) translate(0px,0px) rotate(0deg);
+    }
+}
+#semrush_right>img:nth-child(1){
+animation: bounce .7s forwards;
+transform: scale(0);
+}
+
+@keyframes bounce{
+    0% {
+        transform: scale(0);
+    }
+    
+    65% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 #semrush_right>img:nth-child(2){
 
     /* border: 1px solid yellow; */
     height: 100%;
-    /* width: 350px; */
     position: absolute;
     top: 8px;
     left: 0;
-    animation: float 8s linear .2s;
-    transform: scale(1) translate(-2px,-8px);
+    animation: moveAnimation 15000ms,scaleAnimation 1000ms;
 }
+@keyframes scaleAnimation{
+    from{-webkit-transform: scale(0);}
+        to{-webkit-transform: scale(1);}
+}
+@keyframes moveAnimation{
+    0% {
+        transform: rotate(0deg) translate(-2px,-8px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn) translate(-2px,-8px) rotate(-1turn);
+    }
+}
+
 #main_interest{
     width: 80%;
     margin: auto;
-    padding-left: 5%;
+    
+}
+#main_top>h1{
+    font-family: "Factor A",Arial, Helvetica, sans-serif;
 }
 #main_top>div{
     /* border: 1px solid red; */
@@ -75,20 +111,23 @@
     gap: 15px;
 }
 #main_top>div>button{
+    cursor: pointer;
     font-family: Arial;
     font-size: 17px;
     line-height: 26px;
     text-align: center;
     height: 42px;
     border-radius:50px;
-    border: 1px solid grey;
+    border: 1px solid rgb(222, 221, 221);
+    background-color: transparent;
     padding: 7px 27px 7px 27px;
 }
 #interest_container{
     /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 3%;
+    grid-auto-rows:244px;
+    grid-gap: 2em;
     margin-top: 40px;
 }
 #interest_container>div{
@@ -114,4 +153,105 @@
     padding: 2px 7px 2px 7px;
     line-height: 17px;
     font-size: 14px;
+}
+#interest_div>div:nth-child(1)>h2{
+font-size: 22px;
+font-family: "Factor A",Arial, Helvetica, sans-serif;
+}
+#interest_div>div:nth-child(1)>p{
+    font-size: 14px;
+    line-height: 21px;
+    font-family: Inter,sans-serif;
+}
+#interest_div>div:nth-child(2)>p{
+    font-family: Inter,sans-serif;
+    color: grey;
+}
+
+#interest_div:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: transparent;
+    transition: all .4s ease-in-out;
+}
+#interest_div:hover .orange_hover{
+    color: #FF622D;
+}
+#getTrial_inner{
+    /* border: 1px solid red; */
+    width: 75%;
+    height: 160px;
+    padding: 50px 50px 70px 20px;
+    margin: auto;
+    text-align: center;
+    margin-top: 6em;
+    background-color: #421983;
+    border-radius:16px;
+    background-image: url(https://cdn.semrush.com/features/static/redesign/images-assets/trial-left-shape.702fcf2a1651.svg),url(https://cdn.semrush.com/features/static/redesign/images-assets/trial-right-shape.b6b37bfe9007.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%,100% 0;
+
+}
+#getTrial_inner h1{
+    font-family: "Factor A",Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 32px;
+    color: white;
+}
+#getTrial_inner button{
+    font-family: Inter,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    background-color: #FF622D;
+    color: white;
+    height: 56px;
+    width: 233px;
+    padding: 17px 24px 17px 24px;
+    border-radius: 10px;
+    border: transparent;
+}
+
+
+#all_tool{
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    
+}
+
+#all_tool h1{
+    font-family: 'Factor Sans',Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+#tool_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 25px;
+    /* border: 1px solid red; */
+    
+}
+#tool1{
+    grid-column: 1/4;
+}
+#tool1 ul{
+    column-count: 3;
+    column-gap: 32px;
+    vertical-align: initial;
+}
+li{
+    font-family: Inter,sans-serif;
+     list-style: none;
+     line-height: 30px;
+     margin-left: -2.4em;
+    
+}
+.tool_heading{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    font-family: 'Factor Sans',Arial, Helvetica, sans-serif;
 }

@@ -98,13 +98,15 @@ function display(data){
         let div1=document.createElement("div");
         let div2=document.createElement("div");
 
-        let title=document.createElement("p");
+        let title=document.createElement("h2");
+        title.setAttribute("class","orange_hover")
         title.innerText=ele.title;
 
         let  desc=document.createElement("p");
         desc.innerText=ele.description;
 
         let more=document.createElement("p");
+        more.setAttribute("class","orange_hover")
         more.innerText="Learn more";
 
         let tools=document.createElement("button");
@@ -117,22 +119,67 @@ function display(data){
     })
 };
 
-document.querySelector("#all").addEventListener("click",()=>{
+let btn1=document.getElementById("all");
+btn1.style.backgroundColor="#00bc98";
+let btn2=document.getElementById("seo");
+let btn3=document.getElementById("content");
+let btn4=document.getElementById("market_research");
+let btn5=document.getElementById("advertising");
+let btn6=document.getElementById("ss");
+
+btn1.addEventListener("click",()=>{
+    btn1.style.backgroundColor="#00bc98";
+    btn2.style.backgroundColor="transparent";
+    btn3.style.backgroundColor="transparent";
+    btn4.style.backgroundColor="transparent";
+    btn5.style.backgroundColor="transparent";
+    btn6.style.backgroundColor="transparent";
+
     display(filter_data);
 })
-document.querySelector("#seo").addEventListener("click",()=>{
+btn2.addEventListener("click",()=>{
+    btn1.style.backgroundColor="transparent";
+    btn2.style.backgroundColor="#00bc98";
+    btn3.style.backgroundColor="transparent";
+    btn4.style.backgroundColor="transparent";
+    btn5.style.backgroundColor="transparent";
+    btn6.style.backgroundColor="transparent";
     interest_filter("seo")
 })
-document.querySelector("#content").addEventListener("click",()=>{
+btn3.addEventListener("click",()=>{
+    btn1.style.backgroundColor="transparent";
+    btn2.style.backgroundColor="transparent";
+    btn3.style.backgroundColor="#00bc98";
+    btn4.style.backgroundColor="transparent";
+    btn5.style.backgroundColor="transparent";
+    btn6.style.backgroundColor="transparent";
     interest_filter("content")
 })
-document.querySelector("#market_research").addEventListener("click",()=>{
+btn4.addEventListener("click",()=>{
+    btn1.style.backgroundColor="transparent";
+    btn2.style.backgroundColor="transparent";
+    btn3.style.backgroundColor="transparent";
+    btn4.style.backgroundColor="#00bc98";
+    btn5.style.backgroundColor="transparent";
+    btn6.style.backgroundColor="transparent";
     interest_filter("MR")
 })
-document.querySelector("#advertising").addEventListener("click",()=>{
+btn5.addEventListener("click",()=>{
+    btn1.style.backgroundColor="transparent";
+    btn2.style.backgroundColor="transparent";
+    btn3.style.backgroundColor="transparent";
+    btn4.style.backgroundColor="transparent";
+    btn5.style.backgroundColor="#00bc98";
+    btn6.style.backgroundColor="transparent";
     interest_filter("adv")
 })
-document.querySelector("#ss").addEventListener("click",()=>{
+btn6.addEventListener("click",()=>{
+    btn1.style.backgroundColor="transparent";
+    btn2.style.backgroundColor="transparent";
+    btn3.style.backgroundColor="transparent";
+    btn4.style.backgroundColor="transparent";
+    btn5.style.backgroundColor="transparent";
+    btn6.style.backgroundColor="#00bc98";
     interest_filter("s&s")
 })
 
