@@ -9,7 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./pricing.css">
+    <link rel="stylesheet" href="../styles/pricing.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <div id="nav"></div>
@@ -1309,7 +1313,15 @@ Am I charged when I enter my credit card?
 </div>
 </body>
 </html>
-<script src="./pricing.js"></script>
+<script src="../scripts/pricing.js"></script>
+
+<script type="module">
+  import navbar from "../components/navbar.js"
+document.querySelector("#nav").innerHTML=navbar()
+</script>
+
+
+
 
 
 

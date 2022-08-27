@@ -4,7 +4,7 @@ let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
 
 
 if (checkflag == true) {
-    // window.location.href = ".html"
+      //window.location.href = ""
 }
 
 document.querySelector("form").addEventListener("submit", handleSignUp);

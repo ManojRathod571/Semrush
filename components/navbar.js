@@ -8,8 +8,8 @@ function navbar(){
           />
         </div>
         <div id="nev_menu_link">
-          <a href="feature.html">Features</a>
-          <a href="pricing.html">Pricing</a>
+          <a href="../All_Pages/feature.html">Features</a>
+          <a href="../All_Pages/pricing.html">Pricing</a>
           <div tabindex="0" class="menu" id="resources_div">
           <p>Resources <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
             <div class="menu-dropdown">

@@ -4,7 +4,7 @@ $(document).ready(function(){
 })
 
 function fun(){
-    location.href="pricing.html";
+    location.href="project.html";
 }
 
 
@@ -23,6 +23,15 @@ alert("Please fill all the details");
     }
     else{
         alert("Payment successful");
+        setTimeout(redirect,1000)
     }
     
 }
+
+function redirect(){
+    location.href="project.html";
+}
+
+
+let email = JSON.parse(localStorage.getItem("email"));
+console.log("email:",email);

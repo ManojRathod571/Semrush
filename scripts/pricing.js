@@ -29,6 +29,8 @@ function animatedtoggle(){
     toggle.classList.toggle("active");
     if(toggle.classList.contains("active"))
     {
+      console.log("12 year");
+      
         dollar.innerHTML="$99";
         or.innerHTML=null;
         subs.innerHTML=null;
@@ -41,6 +43,7 @@ function animatedtoggle(){
         subs2.innerHTML=null;
     }
     else{
+      console.log("month")
         dollar.innerHTML="$119";
         or.innerHTML="or";
         subs.innerHTML="Subscribe";
