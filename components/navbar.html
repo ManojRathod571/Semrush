@@ -5,14 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <style>
       /* style for the css menu dropdown container */
+      body{
+        margin: 0px;
+        padding: 0px;
+      }
+      #navBar_div{
+        width: 100%;
+      }
+      #main_navBar_div{
+        background-color: black; 
+        height: 50px; 
+        display:grid;
+        align-items: center;
+        grid-template-columns: 20% 60%;
+      }
+      #logo-div>img{
+        margin-top: 5px;
+         width: 125px;
+      }
+      #nev_menu_link{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      #nev_menu_link>a{
+        background: transparent;
+        border: none;
+        outline: 0;
+        display: block;
+        color:#a1a6af;
+        text-decoration: none;
+        padding: 5px;
+      }
       .menu {
         position: relative;
         display: inline-block;
@@ -26,25 +53,32 @@
       /* style for the button */
       .menu:before {
         padding: 5px 10px;
-        color: white;
+        color:#a1a6af;
       }
-      #resources_div:before{
+      /* #resources_div:before{
         content: "Resources";
-      }
-     #company_div:before{
+      } */
+     /* #company_div:before{
         content: "Company";
-      } 
+      }  */
        #appCenter_div:before{
-        content: "App Center";
+        content: "App Center " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAAFgDGsgMZAAAAEGNhTnYAAAAUAAAACwAAAAAAAAAWUQnAbAAAAEJJREFUKM9j9F9n/J+BioCJmobR3sANgWfgGJcYLhoGWNBtCFhvAlcIY8NoqnkZ3dX4AAsximjuQuTwQ7eMceSlQwDBRidGVtcaCAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=);
       }
-      #extraTools_div:before{
+      /* #extraTools_div:before{
         content: "Extra tools";
-      }
-
+      } */
+       .menu>p{
+        color: #a1a6af;;
+       }
+.menu>p:hover{
+  color: #ffffff;
+}
       .menu:focus {
         pointer-events: none;
       }
-
+      .menu:focus p{
+        color: #ffffff;
+      }
       /* If :focus detected the dropdown menu is displayed by making it visible */
       .menu:focus .menu-dropdown {
         opacity: 1;
@@ -57,9 +91,6 @@
         width: auto;
         margin: 3px 0 0 0;
         padding: 10px;
-        border-radius: 3px;
-        border: 1px black solid;
-        border-radius: 3px;
         pointer-events: auto;
         position: absolute;
         z-index: 1;
@@ -67,8 +98,7 @@
         visibility: hidden;
         transition: visibility 1s;
         background: #1f8bd3;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+       
       }
 
       /* style the links in the dropdown */
@@ -82,25 +112,27 @@
         width: 160px;
         padding: 5px;
       }
+      #resources_div>.menu-dropdown{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
     </style>
   </head>
   <body>
     <div id="navBar_div">
-      <div
-        id="main_navBar_div"
-        style="background-color: black; height: 50px; display: flex"
-      >
+      <div id="main_navBar_div">
         <div id="logo-div">
           <img
-            style="width: 125px"
-            src="https://cdnwebsite.databox.com/wp-content/uploads/2021/03/30054559/SEMrush-logo.png"
+            src="https://i.postimg.cc/KcPQzkf4/output-onlinepngtools.png"
             alt=""
           />
         </div>
-        <div id="menu_link">
+        <div id="nev_menu_link">
           <a href="features.html">Features</a>
           <a href="pricing.html">Pricing</a>
+           
           <div tabindex="0" class="menu" id="resources_div">
+            <p>Resources</p>
             <div class="menu-dropdown">
               <a href=""><h3>Blog</h3><p>Read the industry's latest thoughts on digital marketing, content strategy, SEO, PPC, social media and more.</p></a>
               <a href=""><h3>Help Center</h3><p>Learn how to use Semrush with user manuals, how-to’s, videos and more!</p></a>
@@ -112,49 +144,46 @@
               <a href=""><h3>Top WEbsites</h3><p>Discover the most visited websites. Analyze their traffic and search rankings. Choose country or industry to find out who currently leads the market.</p></a>
             </div>
           </div>
+          <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAAFgDGsgMZAAAAEGNhTnYAAAAUAAAACwAAAAAAAAAWUQnAbAAAAEJJREFUKM9j9F9n/J+BioCJmobR3sANgWfgGJcYLhoGWNBtCFhvAlcIY8NoqnkZ3dX4AAsximjuQuTwQ7eMceSlQwDBRidGVtcaCAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=" alt=""></span>
           <div tabindex="0" class="menu" id="company_div">
+            <p>Company</p>
             <div class="menu-dropdown">
-              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-              <a href="javascript:alert('No Javascript')">No Javascript</a>
-              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-              <a href="javascript:alert('No Javascript')">No Javascript</a>
+              <a href="">About Us</a>
+              <a href="">Newsroom</a>
+              <a href="">Careers <i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></a>
+              <a href="">Success Stories</a>
+              <a href="">Data Studies</a>
+              <a href=""><h3>Affilliate Program <span><i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></span></h3></a>
+              <a href="">For Investors <i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></a>
+              <a href="">Contacts</a>
+              <a href="">Stats and facts</a>
+
             </div>
           </div>
           <div tabindex="0" class="menu" id="appCenter_div">
             <div class="menu-dropdown">
-              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-              <a href="javascript:alert('No Javascript')">No Javascript</a>
-              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-              <a href="javascript:alert('No Javascript')">No Javascript</a>
-            </div>
+              <a href="">Store</a>
+              <a href="">My Apps</a>
+              <a href="">About</a>
+              <a href="">For Partners</a>
+             </div>
           </div>
-               <div tabindex="0" class="menu" id="extraTools_div">
-            <div class="menu-dropdown">
-              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-              <a href="javascript:alert('No Javascript')">No Javascript</a>
-              <a href="javascript:alert('Dropdown 1')">Dropdown 1</a>
-              <a href="javascript:alert('Dropdown 2')">Dropdown 2</a>
-              <a href="javascript:alert('Dropdown 3')">Dropdown 3</a>
-              <a href="javascript:alert('No Javascript')">No Javascript</a>
+            <div tabindex="0" class="menu" id="extraTools_div">
+              <div class="menu-dropdown">
+              <a href="">Content Marketplace</a>
+              <a href="">Content Outline Builder <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
+              <a href="">ImpactHero</a>
+              <a href="">Tools for Amazon</a>
+              <a href="">SplitSignal <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
+              <a href="">Custom reports</a>
+              <a href="">Surround Sound <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
+              <a href="">Pagelmprove <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
             </div>
-          </div>    
+          </div>  
         </div>
       </div>
     </div>
   </body>
 </html>
 <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-  crossorigin="anonymous"
 ></script>
