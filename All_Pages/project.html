@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -281,5 +284,11 @@
 
    
 </body>
-<script src="project.js"></script>
+<script src="../scripts/project.js"></script>
+<script type="module">
+    import navbar from "../components/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar()
+    
+    
+</script>
 </html>
