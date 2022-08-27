@@ -1,4 +1,4 @@
-let userData = JSON.parse(localStorage.getItem("UserData")) || [];
+let userData = JSON.parse(localStorage.getItem("userData")) || [];
 
 let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
 

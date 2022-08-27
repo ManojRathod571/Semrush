@@ -1,4 +1,5 @@
-body{
+  /* style for the css menu dropdown container */
+    body{
         margin: 0px;
         padding: 0px;
       }
@@ -8,15 +9,17 @@ body{
         z-index: 10;
         position: fixed;
         top: 0px;
+      display: grid;
+      align-items:center ;
       }
       #main_navBar_div{
         background-color: #111317; 
-        height: 50px; 
+        height: 55px; 
         padding-left: 5%;
         padding-right: 5%;
         display:grid;
         align-items: center;
-        grid-template-columns: 20% 60%;
+        grid-template-columns: 20% 60% 20%;
       }
       #logo-div>img{
          width: 165px;
@@ -95,10 +98,10 @@ body{
         text-decoration: none;
         padding: 0px 20px ;
       }
-      .menu-dropdown>a>h3:hover{
+      .menu-dropdown>a>h3:hover , #langauage_div>.menu-dropdown>a>p:hover{
         color: #ff622d;
       }
-         #resources_div>.menu-dropdown{
+       #resources_div>.menu-dropdown{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
@@ -111,10 +114,57 @@ body{
         #resources_div>.menu-dropdown>a>p{
            margin-top:10px ;
            color: #898d9a;
-           font-size: 13px;
+           font-size: 15px;
            font-weight: 400;
            line-height: 1.53;
         }
        #company_div .menu-dropdown,#appCenter_div .menu-dropdown,#extraTools_div .menu-dropdown{
             width: max-content;
        }
+       #langauage_div>.menu-dropdown>a>p{
+           margin-top:10px ;
+           width: max-content;
+           color: #ffffff;
+           font-size: 13px;
+           font-weight: 400;
+           line-height: 1;
+        }
+        #profile_div{
+           margin: auto;
+        }
+        #profile_container{
+          display: flex;
+          gap: 10px;
+         }
+         #before_login{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+         }
+         #login_btn{
+          height: 65%;
+          background: transparent;
+          border: 1px solid #fff;;
+          padding:6px 13px;
+          color:#fff;
+          font-size: 14px;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+         #login_btn:hover{
+          background-color:#364656;
+         }
+         #signup_btn{
+           height: 65%;
+           background-color: #00bc98;
+           border: 1px solid #00bc98;
+          padding:6px 13px;
+          color:#fff;
+          font-size: 14px;
+          border-radius: 6px;
+          cursor: pointer;
+         }
+          #signup_btn:hover{
+             background-color: rgb(23, 163, 107);
+          }
+         
