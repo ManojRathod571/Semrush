@@ -1,4 +1,4 @@
-
+// *****************************************  Insight functions **********************************************************
 let button = document.querySelectorAll("#content-flex div");
 let border = document.querySelectorAll("#content-flex span");
 console.log('border:', border.length)
@@ -32,7 +32,8 @@ function showContent(index) {
 showContent(0)
 
 
-let colors = ["#c9EDFF", "#999", "#BAFFD6", "#FFE3C9", "#E8D1E8", "#FACFD6"];
+// *****************************************  Image slider functions **********************************************************
+let colors = ["rgb(230, 187, 219)", "#c9EDFF", "#BAFFD6", "#FFE3C9", "#E8D1E8", "#FACFD6"];
 let tags = document.querySelectorAll("#tags-1 > button");
 let div = document.querySelectorAll(".testomonial-div");
 let crauser = document.querySelector("#crauser");
