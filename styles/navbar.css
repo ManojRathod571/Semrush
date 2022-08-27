@@ -131,12 +131,12 @@
         #profile_div{
            margin: auto;
         }
-         #before_login{
+         /* #before_login{
          display: none;
          }
          #after_login{
           display: block;
-         }
+         } */
         .profile_container{
          display: flex;
           gap: 15px;
