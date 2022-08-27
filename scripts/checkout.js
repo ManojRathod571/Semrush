@@ -33,23 +33,18 @@ function redirect(){
 }
 
 
-let email = JSON.parse(localStorage.getItem("email"));
+let email = (localStorage.getItem("email"));
 console.log("email:",email);
+document.getElementById("user_email").innerText=email;
 
 
 
 //plan value append
 
+let value=(localStorage.getItem("plans"));
+document.getElementById("subs_plan").innerText=value;
  
 
- localStorage.getItem("plan_of_subs");
- //console.log("value:",value);
- if("plan_of_subs"=="12 month")
- {
-    document.getElementById("subs_plan").innerText="12 month";
- }
- else{
-    document.getElementById("subs_plan").innerText="month";
- }
+ 
 
 

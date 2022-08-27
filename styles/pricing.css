@@ -4,6 +4,13 @@
    
     height: 60px;
 }
+.mainbtn:hover{
+background-color:#0c816a ;
+}
+.subshov:hover{
+text-decoration-line: underline;
+}
+
 
 .parent{
     width: 80%;
