@@ -66,4 +66,8 @@ function navbar(){
     `
 }
 
+function navbarJS(){
+  
+}
+
 export default navbar
