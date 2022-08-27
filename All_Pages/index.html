@@ -45,13 +45,14 @@
                 </p>
                 <div id="search-box">
                     <div id="wrapper-1">
-                        <input type="text" id="search-bar" placeholder="Enter domain, keyword or URL">
+                        <input type="text" id="search-bar" placeholder="Enter domain, keyword or URL"
+                            oninput="debouncing(signup, 1000)">
                         <select name="" id="country">
                             <option value="">India</option>
                             <option value="">UK</option>
                             <option value=""> USA</option>
-                            <option value=""> Japana</option>
-                            <option value="">anda</option>
+                            <option value=""> Japan</option>
+                            <option value="">Canda</option>
                             <option value="">Itly</option>
                             <option value="">Frace</option>
                             <option value="">Russia</option>
@@ -587,10 +588,9 @@
 </html>
 <script src="../scripts/index.js"></script>
 <script type="module">
- import {navbar,navbarJS,user_logout} from "../components/navbar.js"
-  document.querySelector("#navbar").innerHTML=navbar();
-   navbarJS()
-
+    import { navbar, navbarJS, user_logout } from "../components/navbar.js"
+    document.querySelector("#navbar").innerHTML = navbar()
+    navbarJS()
 </script>
 <!-- slick -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

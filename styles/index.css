@@ -98,10 +98,11 @@ body {
   width: 370px;
   height: 54px;
   font-size: 16px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   padding: 0px 16px;
   border: none;
-  border-right: 5px solid rgb(115, 112, 112);
+  border-right: 2px solid rgb(115, 112, 112);
 }
 #search-box input:focus {
   outline: none !important;

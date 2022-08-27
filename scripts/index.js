@@ -1,4 +1,21 @@
 // *****************************************  Insight functions **********************************************************
+let id;
+
+function debouncing(signup, delay) {
+    if (id) {
+      clearTimeout(id);
+    }
+  
+    id = setTimeout(() => {
+        signup();
+    }, delay);
+  }
+  
+const signup = () =>{
+    window.location.href = "signup.html";
+}
+
+
 let button = document.querySelectorAll("#content-flex div");
 let border = document.querySelectorAll("#content-flex span");
 console.log('border:', border.length)
