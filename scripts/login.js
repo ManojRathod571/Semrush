@@ -1,12 +1,12 @@
 
-let signupLS = JSON.parse(localStorage.getItem("UserData")) || [];
+let signupLS = JSON.parse(localStorage.getItem("userData")) || [];
 console.log(signupLS);
 
 let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
 console.log(checkflag);
 
 if (checkflag == true) {
-    window.location.href = "../Project_Page/project.html"
+    window.location.href = "project.html"
 }
 
 document.querySelector("form").addEventListener("submit", handleCheckCredentials);
@@ -28,6 +28,7 @@ function handleCheckCredentials(event) {
         ) {
             localStorage.setItem("authentication", true);
             localStorage.setItem("email", (signupLS[i].email))
+            window.location.href="project.html"
             return alert("Login Successful");
         }
     }
