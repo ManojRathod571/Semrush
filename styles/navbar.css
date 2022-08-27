@@ -4,6 +4,10 @@ body{
       }
       #navBar_div{
         width: 100%;
+        font-family: sans-serif;
+        z-index: 10;
+        position: fixed;
+        top: 0px;
       }
       #main_navBar_div{
         background-color: #111317; 
