@@ -114,3 +114,23 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+var coll1 = document.getElementsByClassName("tableflex");
+var i;
+
+for (i = 0; i < coll1.length; i++) {
+  coll1[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content1 = this.nextElementSibling;
+    if (content1.style.display === "block") {
+      content1.style.display = "none";
+    } else {
+      content1.style.display = "block";
+    }
+  });
+}
+
+
+function funredirect(){
+  location.href="checkout.html";
+}

@@ -1,4 +1,22 @@
 
+ body{
+    padding: 0%;
+    margin: 0%;
+}
+#maindiv{
+    width: 100vw;
+    height: 100vh;
+    background-color: #C7FA73;
+    
+    background-image: url("data:image/svg+xml,%3Csvg width='1860' height='1900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1063.43 12.6364c367.16 45.007 687.98 304.0646 794.88 679.0506 3.46 11.402-3.7 23.608-15.24 26.616l-57.69 15.041c120.54 462.306-157.08 934.396-619.51 1054.966l15.02 57.61c3.01 11.53-4.16 23.73-15.82 26.28-49.7 11.73-99.44 19.33-148.84 23-22.388 3.12-49.462 4.71-81.749 4.71-444.176 0-809.937-314.15-908.1237-729.65-.0771-.29-.1482-.58-.213-.88-10.7156-45.42-17.9662-90.87-21.9148-136.07C1.6958 1004.77.4023.3519.4023.3519H948.027c50.826 0 88.603 4.2072 115.403 12.2845z' fill='%23fff'/%3E%3C/svg%3E");
+    background-size: 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:-380px -200px;
+}
+
+
+
 
 #parent{
     height: 50px;
@@ -11,15 +29,20 @@
 }
 #parent1 img{
     width: 50%;
-    background-color: #C7FA73;
-    height: 180%;
+  
+    height: 100%;
    margin-right: -120px;
 }
 #parent1{
     width: 200%;
     margin-top: -60px;
-    height: 800px;
+    height: 1000px;
 
+}
+#imagewidth{
+    width: 60%;
+    margin-left: 180px;
+    margin-top: 80px;
 }
 #day{
     font-family: Factor A,sans-serif;  
@@ -39,6 +62,7 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 200px;
+    margin-left: 200px;
 }
 .input1:focus{
     outline: none;
