@@ -327,8 +327,8 @@ margin-top: 20px;
   
     top: 0;
    
-    border: 1px solid red;
-    box-shadow: 5px 5px 25px rgb(137 141 154 / 30%);
+    border: 0;
+   
 }
 #cont{
     font-family: "Factor A",Arial,Helvetica,sans-serif;
@@ -379,7 +379,7 @@ margin-top: 20px;
     height: 400px;
     border: 0px;
     margin: auto;
-    border: 1px solid red;
+    border: 0;
   
    margin-top: 40px;
   
@@ -493,8 +493,8 @@ margin-top: 20px;
   }
   #tablediv{
     width: 80%;
-    height: 3600px;
-    border: 1px solid red;
+    height: auto;
+    border: 0;
     margin: auto;
    
   }
@@ -520,6 +520,11 @@ margin-top: 20px;
    justify-content: space-evenly;
     border: 0;
    
+  }
+  .pcolor{
+    color: #898d9a;
+    size: 18px;
+    margin-top: -10px;
   }
   .marginl{
     margin-left: 150px;
@@ -557,11 +562,27 @@ margin-top: 20px;
     cursor: pointer;
     border: none;
     text-align: left;
-     font-size: 15px;
+     font-size: 18px;
     height: 50px;
   margin-top: 10px;
   margin-right: -65px;
+  font-family: "Factor A",Arial,Helvetica,sans-serif,Impact;
+  font-weight: bold;
+  }
+  .collapsible4{
    
+        background-color:white;
+         color: #171a22;
+         cursor: pointer;
+         border: none;
+         text-align: left;
+          font-size: 18px;
+         height: 50px;
+       margin-top: 10px;
+       margin-right: -65px;
+       font-family: "Factor A",Arial,Helvetica,sans-serif,Impact;
+  font-weight: bold; 
+       
   }
   #imgsvg img{
     width: 110%;
@@ -601,4 +622,40 @@ height: 8px;
 background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4.25' cy='4' r='3.377' stroke='%2300BC98' fill='%2300BC98' stroke-width='1'/%3E%3C/svg%3E");
 background-repeat: repeat-x;
 z-index: 1
+}
+.btncolor{
+    color: #00ba96;
+    border:1px solid #00ba96;
+    background-color: white;
+    height: 50px;
+    width: 230%;
+    border-radius: 5px;
+    margin-top: 10px;
+margin-left: -40px;
+font-size: 16px;
+  
+}
+.btncolor1{
+    color: #00ba96;
+    border:1px solid #00ba96;
+    background-color: white;
+    height: 50px;
+    width: 150%;
+    border-radius: 5px;
+    margin-top: 10px;
+margin-left: -50px;
+font-size: 16px;
+  
+}
+#lastsection{
+    width: 80%;
+    height: 400px;
+    border: 0px;
+    margin: auto;
+    border: 1px solid red;
+  margin-top: 40px;
+   background: rgba(110,219,255,.16);
+    border-radius: 16px;
+    padding: 40px 20px 56px;
+    text-align: center;
 }

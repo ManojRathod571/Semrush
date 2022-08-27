@@ -129,3 +129,8 @@ for (i = 0; i < coll1.length; i++) {
     }
   });
 }
+
+
+function funredirect(){
+  location.href="checkout.html";
+}
