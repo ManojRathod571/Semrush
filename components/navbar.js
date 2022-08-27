@@ -8,7 +8,7 @@ function navbar(){
           />
         </div>
         <div id="nev_menu_link">
-          <a href="features.html">Features</a>
+          <a href="">Features</a>
           <a href="pricing.html">Pricing</a>
           <div tabindex="0" class="menu" id="resources_div">
           <p>Resources <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
@@ -67,7 +67,7 @@ function navbar(){
 }
 
 function navbarJS(){
-  
+
 }
 
 export default navbar
