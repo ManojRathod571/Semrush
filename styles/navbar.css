@@ -1,0 +1,116 @@
+body{
+        margin: 0px;
+        padding: 0px;
+      }
+      #navBar_div{
+        width: 100%;
+      }
+      #main_navBar_div{
+        background-color: #111317; 
+        height: 50px; 
+        padding-left: 5%;
+        padding-right: 5%;
+        display:grid;
+        align-items: center;
+        grid-template-columns: 20% 60%;
+      }
+      #logo-div>img{
+         width: 165px;
+      }
+      #nev_menu_link{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: left
+      }
+      #nev_menu_link>a{
+        background: transparent;
+        border: none;
+        outline: 0;
+        display: block;
+        color: #a1a6af;
+        text-decoration: none;
+        padding: 5px;
+      }
+      .menu {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        text-align: left;
+      }
+
+      /* style for the button */
+      #nev_menu_link>a:hover{
+         color: #ffffff;
+      }
+        .menu>p{
+        color: #a1a6af;;
+       }
+    .menu>p:hover{
+     color: #ffffff;
+     }
+      .menu:focus {
+        pointer-events: none;
+      }
+         .menu:focus p{
+        color: #ffffff;
+      }
+
+      /* If :focus detected the dropdown menu is displayed by making it visible */
+      .menu:focus .menu-dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* style for the dropdown box */
+      .menu-dropdown {
+        background-color: #364656;
+        margin:-4px 0 0 0;
+        padding:10px 30px;
+        pointer-events: auto;
+        position: absolute;
+        left: -40px;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 1s;
+        background:  #111317;
+      }
+
+      /* style the links in the dropdown */
+       .menu-dropdown a{
+        background: transparent;
+        border: none;
+        outline: 0;
+        display: block;
+        color: white;
+        width: auto;
+        text-decoration: none;
+        padding: 0px 20px ;
+      }
+      .menu-dropdown>a>h3:hover{
+        color: #ff622d;
+      }
+         #resources_div>.menu-dropdown{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+       #resources_div>.menu-dropdown>a{
+        width: 300px;
+       }
+        #resources_div>.menu-dropdown>a>h3{
+            margin-bottom:0 ;
+        }
+        #resources_div>.menu-dropdown>a>p{
+           margin-top:10px ;
+           color: #898d9a;
+           font-size: 13px;
+           font-weight: 400;
+           line-height: 1.53;
+        }
+       #company_div .menu-dropdown,#appCenter_div .menu-dropdown,#extraTools_div .menu-dropdown{
+            width: max-content;
+       }

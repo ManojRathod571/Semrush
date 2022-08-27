@@ -6,7 +6,7 @@ let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
 console.log(checkflag);
 
 if (checkflag == true) {
-    window.location.href = "exercise.html"
+    window.location.href = "../Project_Page/project.html"
 }
 
 document.querySelector("form").addEventListener("submit", handleCheckCredentials);
@@ -26,7 +26,7 @@ function handleCheckCredentials(event) {
             signupLS[i].email == logInMail &&
             signupLS[i].password == logInPassword
         ) {
-            localStorage.setItem("authentication", "true");
+            localStorage.setItem("authentication", true);
             localStorage.setItem("email", (signupLS[i].email))
             return alert("Login Successful");
         }
