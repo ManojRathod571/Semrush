@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <style>
-      /* style for the css menu dropdown container */
-      body{
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
+  <style>
+    /* style for the css menu dropdown container */
+    body{
         margin: 0px;
         padding: 0px;
       }
       #navBar_div{
         width: 100%;
+        font-family: sans-serif;
+        z-index: 10;
+        position: fixed;
+        top: 0px;
+      display: grid;
+      align-items:center ;
       }
       #main_navBar_div{
-        background-color: black; 
-        height: 50px; 
+        background-color: #111317; 
+        height: 55px; 
+        padding-left: 5%;
+        padding-right: 5%;
         display:grid;
         align-items: center;
-        grid-template-columns: 20% 60%;
+        grid-template-columns: 20% 60% 20%;
       }
       #logo-div>img{
-        margin-top: 5px;
-         width: 125px;
+         width: 165px;
       }
       #nev_menu_link{
         display: flex;
         align-items: center;
         gap: 20px;
+        justify-content: left
       }
       #nev_menu_link>a{
         background: transparent;
         border: none;
         outline: 0;
         display: block;
-        color:#a1a6af;
+        color: #a1a6af;
         text-decoration: none;
         padding: 5px;
       }
@@ -51,34 +61,22 @@
       }
 
       /* style for the button */
-      .menu:before {
-        padding: 5px 10px;
-        color:#a1a6af;
+      #nev_menu_link>a:hover{
+         color: #ffffff;
       }
-      /* #resources_div:before{
-        content: "Resources";
-      } */
-     /* #company_div:before{
-        content: "Company";
-      }  */
-       #appCenter_div:before{
-        content: "App Center " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAAFgDGsgMZAAAAEGNhTnYAAAAUAAAACwAAAAAAAAAWUQnAbAAAAEJJREFUKM9j9F9n/J+BioCJmobR3sANgWfgGJcYLhoGWNBtCFhvAlcIY8NoqnkZ3dX4AAsximjuQuTwQ7eMceSlQwDBRidGVtcaCAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=);
-      }
-      /* #extraTools_div:before{
-        content: "Extra tools";
-      } */
-       .menu>p{
+        .menu>p{
         color: #a1a6af;;
        }
-.menu>p:hover{
-  color: #ffffff;
-}
+    .menu>p:hover{
+     color: #ffffff;
+     }
       .menu:focus {
         pointer-events: none;
       }
-      .menu:focus p{
+         .menu:focus p{
         color: #ffffff;
       }
+
       /* If :focus detected the dropdown menu is displayed by making it visible */
       .menu:focus .menu-dropdown {
         opacity: 1;
@@ -88,38 +86,110 @@
       /* style for the dropdown box */
       .menu-dropdown {
         background-color: #364656;
-        width: auto;
-        margin: 3px 0 0 0;
-        padding: 10px;
+        margin:-4px 0 0 0;
+        padding:10px 30px;
         pointer-events: auto;
         position: absolute;
+        left: -40px;
         z-index: 1;
         opacity: 0;
         visibility: hidden;
         transition: visibility 1s;
-        background: #1f8bd3;
-       
+        background:  #111317;
       }
 
       /* style the links in the dropdown */
-      .menu-dropdown a {
+       .menu-dropdown a{
         background: transparent;
         border: none;
         outline: 0;
         display: block;
         color: white;
+        width: auto;
         text-decoration: none;
-        width: 160px;
-        padding: 5px;
+        padding: 0px 20px ;
       }
-      #resources_div>.menu-dropdown{
+      .menu-dropdown>a>h3:hover , #langauage_div>.menu-dropdown>a>p:hover{
+        color: #ff622d;
+      }
+       #resources_div>.menu-dropdown{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
-    </style>
-  </head>
-  <body>
-    <div id="navBar_div">
+       #resources_div>.menu-dropdown>a{
+        width: 300px;
+       }
+        #resources_div>.menu-dropdown>a>h3{
+            margin-bottom:0 ;
+        }
+        #resources_div>.menu-dropdown>a>p{
+           margin-top:10px ;
+           color: #898d9a;
+           font-size: 15px;
+           font-weight: 400;
+           line-height: 1.53;
+        }
+       #company_div .menu-dropdown,#appCenter_div .menu-dropdown,#extraTools_div .menu-dropdown{
+            width: max-content;
+       }
+       #langauage_div>.menu-dropdown>a>p{
+           margin-top:10px ;
+           width: max-content;
+           color: #ffffff;
+           font-size: 14px;
+           font-weight: 400;
+           line-height: 1.4;
+        }
+        #profile_div{
+           margin: auto;
+        }
+         #before_login{
+         display: none;
+         }
+         #after_login{
+          display: block;
+         }
+        .profile_container{
+         display: flex;
+          gap: 15px;
+          align-items: center;
+         }
+         #profile_div .menu-dropdown{
+            position: absolute;
+            left: -100px;
+         }
+         #login_btn{
+          height: 65%;
+          background: transparent;
+          border: 1px solid #fff;;
+          padding:6px 13px;
+          color:#fff;
+          font-size: 14px;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+         #login_btn:hover{
+          background-color:#364656;
+         }
+         #signup_btn{
+           height: 65%;
+           background-color: #00bc98;
+           border: 1px solid #00bc98;
+           padding:6px 13px;
+           color:#fff;
+          font-size: 14px;
+          border-radius: 6px;
+          cursor: pointer;
+         }
+          #signup_btn:hover{
+             background-color: rgb(23, 163, 107);
+          }
+         
+  </style>
+</head>
+
+<body>
+<div id="navBar_div">
       <div id="main_navBar_div">
         <div id="logo-div">
           <img
@@ -128,66 +198,118 @@
           />
         </div>
         <div id="nev_menu_link">
-          <a href="../Feature_Page/feature.html">Features</a>
+          <a href="feature.html">Features</a>
           <a href="pricing.html">Pricing</a>
-           
           <div tabindex="0" class="menu" id="resources_div">
-            <p>Resources</p>
+          <p>Resources <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
             <div class="menu-dropdown">
               <a href=""><h3>Blog</h3><p>Read the industry's latest thoughts on digital marketing, content strategy, SEO, PPC, social media and more.</p></a>
-              <a href=""><h3>Help Center</h3><p>Learn how to use Semrush with user manuals, how-to’s, videos and more!</p></a>
+              <a href=""><h3>Help Center</h3><p>Learn how to use Semrush with user manuals, how-to's, videos and more!</p></a>
               <a href=""><h3>What's New</h3><p>Keep track of the newest Semrush features and improvements.</p></a>
               <a href=""><h3>Webinars</h3><p>Register and take part in educational webinars conducted by the best digital marketing experts.</p></a>
               <a href=""><h3>Ebooks</h3><p>A range of downloadable guides in PDF format that can help you broaden your knowledge and improve your skills.</p></a>
               <a href=""><h3>Hire a Trusted Agency</h3><p>Pressed for time? Need rare skills? Get help from a trusted agency. Our experts work with marketing projects of all kinds and budgets.</p></a>
               <a href=""><h3>Academy</h3><p>Get vital SEO skills, learn how to use our toolkits and get official certificates of your proficiency in SEO and Semrush.</p></a>
-              <a href=""><h3>Top WEbsites</h3><p>Discover the most visited websites. Analyze their traffic and search rankings. Choose country or industry to find out who currently leads the market.</p></a>
+              <a href=""><h3>Top Websites</h3><p>Discover the most visited websites. Analyze their traffic and search rankings. Choose country or industry to find out who currently leads the market.</p></a>
             </div>
           </div>
-          <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAAFgDGsgMZAAAAEGNhTnYAAAAUAAAACwAAAAAAAAAWUQnAbAAAAEJJREFUKM9j9F9n/J+BioCJmobR3sANgWfgGJcYLhoGWNBtCFhvAlcIY8NoqnkZ3dX4AAsximjuQuTwQ7eMceSlQwDBRidGVtcaCAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=" alt=""></span>
           <div tabindex="0" class="menu" id="company_div">
-            <p>Company</p>
+                 <p>Company <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
             <div class="menu-dropdown">
-              <a href="">About Us</a>
-              <a href="">Newsroom</a>
-              <a href="">Careers <i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></a>
-              <a href="">Success Stories</a>
-              <a href="">Data Studies</a>
+              <a href=""><h3>About Us</h3></a>
+              <a href=""><h3>Newsroom</h3></a>
+               <a href=""><h3>Careers <span><i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></span></h3></a>
+              <a href=""><h3>Success Stories</h3></a>
+              <a href=""><h3>Data Studies</h3></a>
               <a href=""><h3>Affilliate Program <span><i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></span></h3></a>
-              <a href="">For Investors <i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></a>
-              <a href="">Contacts</a>
-              <a href="">Stats and facts</a>
+              <a href=""><h3>For Investors <span><i class="fa fa-external-link" style="font-size:10px;font-weight:bolder;"></i></span></h3></a>
+              <a href=""><h3>Contacts</h3></a>
+              <a href=""><h3>Stats and facts</h3></a>
 
             </div>
           </div>
           <div tabindex="0" class="menu" id="appCenter_div">
+          <p>App Center <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAAFgDGsgMZAAAAEGNhTnYAAAAUAAAACwAAAAAAAAAWUQnAbAAAAEJJREFUKM9j9F9n/J+BioCJmobR3sANgWfgGJcYLhoGWNBtCFhvAlcIY8NoqnkZ3dX4AAsximjuQuTwQ7eMceSlQwDBRidGVtcaCAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=" alt=""></span><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
             <div class="menu-dropdown">
-              <a href="">Store</a>
-              <a href="">My Apps</a>
-              <a href="">About</a>
-              <a href="">For Partners</a>
+              <a href=""><h3>Store</h3></a>
+              <a href=""><h3>My Apps</h3></a>
+              <a href=""><h3>About</h3></a>
+              <a href=""><h3>For Partners</h3></a>
              </div>
           </div>
             <div tabindex="0" class="menu" id="extraTools_div">
+            <p>Extra tools <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
               <div class="menu-dropdown">
-              <a href="">Content Marketplace</a>
-              <a href="">Content Outline Builder <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
-              <a href="">ImpactHero</a>
-              <a href="">Tools for Amazon</a>
-              <a href="">SplitSignal <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
-              <a href="">Custom reports</a>
-              <a href="">Surround Sound <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
-              <a href="">Pagelmprove <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></a>
+              <a href=""><h3>Content Marketplace</h3></a>
+              <a href=""><h3>Content Outline Builder <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></span></h3></a>
+              <a href=""><h3>ImpactHero</h3></a>
+              <a href=""><h3>Tools for Amazon</h3></a>
+              <a href=""><h3>SplitSignal <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></span></h3></a>
+              <a href=""><h3>Custom reports</h3></a>
+              <a href=""><h3>Surround Sound <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></span></h3></a>
+              <a href=""><h3>Pagelmprove <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAABmJLR0QA/wD/AP+gvaeTAAAACW9GRnMAAAAAAAAACwA53m8FAAAAEGNhTnYAAAAXAAAACwAAAAAAAAALj8XAewAAAFZJREFUKM9j/F/P8J+BRoCJVgbT3HAWFF4DWgg1MKKKYeOj64OJYXV5AyOKAgwxDPo/dj0YLkd2BbJibGL4fIzbcDQX4TMUX/DgdTkh3xABGEfTOTYAAIt0IJ7IVCAKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg==" alt=""></span></h3></a>
             </div>
           </div>  
         </div>
         <div id="profile_div">
-          <div id="before_login"></div>
-          
+          <div id="before_login">
+            <div class="profile_container">
+              <div tabindex="0" class="menu" id="langauage_div">
+                <p>EN <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                  <div class="menu-dropdown">
+                    <a href=""><p>English</p></a>
+                    <a href=""><p>Español</p></a>
+                    <a href=""><p>Deutsch</p></a>
+                    <a href=""><p>Français</p></a>
+                    <a href=""><p>Italiano</p></a>
+                    <a href=""><p>Português (Brasil)</p></a>
+                    <a href=""><p>Tiếng Việt</p></a>
+                    <a href=""><p>Türkçe</p></a>
+                    <a href=""><p>中文</p></a>
+                    <a href=""><p>日本語</p></a>
+                    <a href=""><p>한국어</p></a>
+                  </div>
+              </div>
+                  <a href="login.html"><button id="login_btn">Log In</button></a>
+                  <a href="signup.html"><button id="signup_btn">Sign Up</button></a>
+            </div>
+          </div>
+          <div id="after_login">
+             <div class="profile_container">
+                   <button id="signup_btn">Upgrade</button>
+                    <div tabindex="0" class="menu" id="langauage_div">
+                     <p>EN <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                     <div class="menu-dropdown">
+                        <a href=""><p>English</p></a>
+                        <a href=""><p>Español</p></a>
+                        <a href=""><p>Deutsch</p></a>
+                        <a href=""><p>Français</p></a>
+                        <a href=""><p>Italiano</p></a>
+                        <a href=""><p>Português (Brasil)</p></a>
+                        <a href=""><p>Tiếng Việt</p></a>
+                        <a href=""><p>Türkçe</p></a>
+                        <a href=""><p>中文</p></a>
+                        <a href=""><p>日本語</p></a>
+                        <a href=""><p>한국어</p></a>
+                     </div>
+                   </div>
+                        <div tabindex="0" class="menu" id="langauage_div">
+                     <p><span><i class="fas fa-user"></i></span> <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                     <div class="menu-dropdown">
+                        <a href=""><p>My profil(id:12374411)</p></a>
+                        <a href=""><p>Subscription info</p></a>
+                        <a href=""><p>Manage users</p></a>
+                        <a href=""><p>Payments</p></a>
+                        <a href=""><p>Queries</p></a>
+                        <a href=""><p>Public profile</p></a>
+                        <a href=""><p>API</p></a>
+                        <a href="index.html"><p onclick="user_logout()">Log out</p></a>
+                     </div>
+                   </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
 </html>
-<script
-></script>
+<script></script>

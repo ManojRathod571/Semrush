@@ -1,8 +1,12 @@
+#navbar a:nth-child(1){
+color: #FFFF;
+font-weight: 600;
+}
 #semrush{
     /* border: 1px solid ; */
     width: 80%;
     display: grid;
-    grid-template-columns:40% 40% ;
+    grid-template-columns:40% auto ;
     gap: 20%;
     margin: auto;
     margin-top: 15vh;
@@ -57,8 +61,10 @@
     }
 }
 #semrush_right>img:nth-child(1){
-animation: bounce .7s forwards;
-transform: scale(0);
+    width: 100%;
+    height: 100%;
+    animation: bounce .7s forwards;
+    transform: scale(0);
 }
 
 @keyframes bounce{
@@ -76,6 +82,7 @@ transform: scale(0);
 #semrush_right>img:nth-child(2){
 
     /* border: 1px solid yellow; */
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 8px;
@@ -105,9 +112,10 @@ transform: scale(0);
 }
 #main_top>div{
     /* border: 1px solid red; */
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    width: 860px;
+    /* grid-template-columns: repeat(6,1fr); */
+    width: 80vw;
     gap: 15px;
 }
 #main_top>div>button{
@@ -179,7 +187,7 @@ font-family: "Factor A",Arial, Helvetica, sans-serif;
 #getTrial_inner{
     /* border: 1px solid red; */
     width: 75%;
-    height: 160px;
+    /* height: 160px; */
     padding: 50px 50px 70px 20px;
     margin: auto;
     text-align: center;
@@ -193,7 +201,7 @@ font-family: "Factor A",Arial, Helvetica, sans-serif;
 }
 #getTrial_inner h1{
     font-family: "Factor A",Arial, Helvetica, sans-serif;
-    font-size: 42px;
+    font-size: 2.5em;
     font-weight: 700;
     line-height: 50px;
     margin-bottom: 32px;
@@ -231,15 +239,14 @@ font-family: "Factor A",Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     row-gap: 25px;
-    /* border: 1px solid red; */
-    
+    /* border: 1px solid red; */  
 }
 #tool1{
     grid-column: 1/4;
 }
 #tool1 ul{
     column-count: 3;
-    column-gap: 32px;
+    column-gap: 5em;
     vertical-align: initial;
 }
 li{
@@ -255,3 +262,58 @@ li{
     line-height: 26px;
     font-family: 'Factor Sans',Arial, Helvetica, sans-serif;
 }
+
+/* media queries*/
+
+@media screen and (max-width: 990px){
+
+    #interest_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #semrush{
+        /* border: 1px solid ; */
+        width: 80%;
+       
+        margin: auto;
+        margin-top: 15vh;
+    }
+    body{
+        background: url(https://cdn.semrush.com/features/static/redesign/images-assets/top_shape.61a7b9779dd8.svg);
+        background-repeat: no-repeat;
+        background-position: right top;
+        
+    }
+    #semrush_left{
+        width: 80vw;
+    }
+    #semrush_right{
+        display: none;
+       
+    }
+    #tool_container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 2em;
+        /* border: 1px solid red; */  
+    }
+}
+
+@media screen and (max-width: 770px){
+    #tool_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2em;
+        column-gap: 1em;
+        /* border: 1px solid red; */  
+    }
+    #tool1 ul{
+        column-count: 2;
+        column-gap: 1em;
+        vertical-align: initial;
+    }
+    #interest_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+

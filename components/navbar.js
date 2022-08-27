@@ -1,5 +1,5 @@
 function navbar(){
-    return ` <div id="navBar_div">
+  return `<div id="navBar_div">
       <div id="main_navBar_div">
         <div id="logo-div">
           <img
@@ -8,8 +8,8 @@ function navbar(){
           />
         </div>
         <div id="nev_menu_link">
-          <a href="../All_Pages/feature.html">Features</a>
-          <a href="../All_Pages/pricing.html">Pricing</a>
+          <a href="feature.html">Features</a>
+          <a href="pricing.html">Pricing</a>
           <div tabindex="0" class="menu" id="resources_div">
           <p>Resources <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
             <div class="menu-dropdown">
@@ -61,13 +61,87 @@ function navbar(){
             </div>
           </div>  
         </div>
+        <div id="profile_div">
+          <div id="before_login">
+            <div class="profile_container">
+              <div tabindex="0" class="menu" id="langauage_div">
+                <p>EN <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                  <div class="menu-dropdown">
+                    <a href=""><p>English</p></a>
+                    <a href=""><p>Español</p></a>
+                    <a href=""><p>Deutsch</p></a>
+                    <a href=""><p>Français</p></a>
+                    <a href=""><p>Italiano</p></a>
+                    <a href=""><p>Português (Brasil)</p></a>
+                    <a href=""><p>Tiếng Việt</p></a>
+                    <a href=""><p>Türkçe</p></a>
+                    <a href=""><p>中文</p></a>
+                    <a href=""><p>日本語</p></a>
+                    <a href=""><p>한국어</p></a>
+                  </div>
+              </div>
+                  <a href="login.html"><button id="login_btn">Log In</button></a>
+                  <a href="signup.html"><button id="signup_btn">Sign Up</button></a>
+            </div>
+          </div>
+          <div id="after_login">
+             <div class="profile_container">
+                   <button id="signup_btn">Upgrade</button>
+                    <div tabindex="0" class="menu" id="langauage_div">
+                     <p>EN <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                     <div class="menu-dropdown">
+                        <a href=""><p>English</p></a>
+                        <a href=""><p>Español</p></a>
+                        <a href=""><p>Deutsch</p></a>
+                        <a href=""><p>Français</p></a>
+                        <a href=""><p>Italiano</p></a>
+                        <a href=""><p>Português (Brasil)</p></a>
+                        <a href=""><p>Tiếng Việt</p></a>
+                        <a href=""><p>Türkçe</p></a>
+                        <a href=""><p>中文</p></a>
+                        <a href=""><p>日本語</p></a>
+                        <a href=""><p>한국어</p></a>
+                     </div>
+                   </div>
+                        <div tabindex="0" class="menu" id="langauage_div">
+                     <p><span><i class="fas fa-user"></i></span> <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
+                     <div class="menu-dropdown">
+                        <a href=""><p>My profil(id:12374411)</p></a>
+                        <a href=""><p>Subscription info</p></a>
+                        <a href=""><p>Manage users</p></a>
+                        <a href=""><p>Payments</p></a>
+                        <a href=""><p>Queries</p></a>
+                        <a href=""><p>Public profile</p></a>
+                        <a href=""><p>API</p></a>
+                        <a href="index.html"><p onclick="user_logout()">Log out</p></a>
+                     </div>
+                   </div>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
     `
 }
 
 function navbarJS(){
+  let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
+  console.log(checkflag);
+  if(checkflag==true){
+    document.querySelector("#before_login").style.display=="none"
+    document.querySelector("#after_login").style.display == "block"
 
+
+  }else{
+    document.querySelector("#after_login").style.display == "none"
+    document.querySelector("#before_login").style.display == "block"
+
+  }
+  
+}
+function user_logout() {
+  localStorage.setItem("authentication", false);
+   window.location.href = "index.html";
 }
 
-export default navbar
+export { navbar, navbarJS, user_logout }
