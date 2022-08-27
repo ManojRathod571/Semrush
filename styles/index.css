@@ -150,16 +150,32 @@ body {
   font-family: "Factor A", Arial, Helvetica, sans-serif;
   margin-left: -40px;
 }
-#brand-slider {
+#brand-container{
   display: flex;
-  margin: auto;
-  width: 835px;
   position: relative;
   justify-content: space-between;
+  margin: auto;
+  width: 835px;
+}
+#brand-slider-1 {
+  display: flex;
+  /* grid-template-columns: repeat(6, 1fr); */
+  margin: auto;
+  justify-content: space-evenly;
+  gap: 15px;
+  position: relative;
   z-index: 1;
   margin-bottom: 130px;
+  overflow-x: auto;
 }
-
+/* #brand-slider-1 > div{
+  display: flex;
+  justify-content:center;
+} */
+#brand-slider-1  img{
+  max-width: 109px;
+  max-height: 40px;
+}
 /***************************************** insight container css *****************************************/
 #inside-tilte {
   font-size: 45px;
@@ -441,7 +457,7 @@ body {
   font-weight: 400;
   line-height: 31px;
 }
-.insight-lg > button {
+.insight-lg >a> button {
   padding: 0 50px;
   height: 50px;
   background-color: #f35a26;
