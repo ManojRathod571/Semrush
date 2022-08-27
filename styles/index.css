@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap");
 
-html {
+/* html {
   font-size: 62.5%;
-}
+} */
+
 body {
   margin: 0px;
   padding: 0px;
@@ -251,7 +252,7 @@ body {
   cursor: grab;
   color: #171a22;
 }
-.left-grid > button {
+.left-grid >a> button {
   height: 50px;
   width: fit-content;
   text-align: center;
@@ -425,7 +426,7 @@ body {
   gap: 80px;
   /* border: 2px solid gray; */
 }
-.insight-lg > h1 {
+.insight-lg >  {
   font-size: 45px;
   font-weight: 500;
   line-height: 54px;
@@ -611,7 +612,7 @@ body {
   width: 100%;
   margin-top: 5px;
 }
-#our-ceo-rg > button {
+#our-ceo-rg > a >button {
   padding: 0 50px;
   height: 50px;
   background-color: #f35a26;
@@ -645,7 +646,7 @@ body {
   margin-bottom: 25px;
   color: white;
 }
-#get-started > button {
+#get-started > a> button {
   padding: 0 100px;
   height: 50px;
   background-color: #f35a26;

@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <!-- <link rel="stylesheet" href="./country.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
-     <!-- Iconscout Link For Icons -->
-     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Document</title>
+    <!--  -->
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+    <!-- navbar -->
+    <div id="navbar">
+        <!-- imported from js -->
+    </div>
+
     <div id="container">
         <!-- background-image-->
         <div id="bg-1"></div>
@@ -30,7 +37,6 @@
                     <br>
                     PPC and social media marketing from just one platform.
                 </p>
-
                 <div id="search-box">
                     <div id="wrapper-1">
                         <span><input type="text" id="search-bar" placeholder="Enter domain, keyword or URL">
@@ -45,22 +51,9 @@
                                 <option value="">Russia</option>
                                 <option value="">Japana</option>
                             </select>
-                            <!-- <div class="wrapper">
-                                <div class="select-btn">
-                                  <span>Select Country</span>
-                                  <i class="uil uil-angle-down"></i>
-                                </div>
-                                <div class="content">
-                                  <div class="search">
-                                    <i class="uil uil-search"></i>
-                                    <input spellcheck="false" type="text" placeholder="Search">
-                                  </div>
-                                  <ul class="options"></ul>
-                                </div>
-                              </div> -->
                         </span>
                     </div>
-                    <button id="start-button">Start Now</button>
+                    <a href=""><button id="start-button">Start Now</button></a>
                 </div>
                 <p id="trusted">
                     Trusted by the world’s leading brands
@@ -128,7 +121,7 @@
                             <p class="bullet-point"></p>
                             <p>Track your SERP positions daily</p>
                         </div>
-                        <button>Try SEO Toolkit</button>
+                        <a href=""><button>Try SEO Toolkit</button></a>
                     </div>
                     <div class="right-grid">
                         <img src="https://cdn.semrush.com/static/index/tools-new/seo.9edeeb0311e7.svg" alt="">
@@ -332,7 +325,7 @@
                     <p>With the size of our SEO databases and speed of our backlink crawler, imagine what you can
                         achieve if
                         you have the insights your competitors don’t.</p>
-                    <button>Learn More</button>
+                    <a href=""><button>Learn More</button></a>
                 </div>
                 <div class="insight-rg">
                     <div>
@@ -404,15 +397,17 @@
                         <p>Create and schedule white-labeled or branded reports</p>
                     </div>
                 </div>
-                <button>
+                <a href="../All_Pages/feature.html"><button>
                     Discover all Semrush features
-                </button>
+                </button></a>
             </div>
         </div>
 
         <!-- image slider -->
         <div id="image-slider">
-            <p>Here’s why marketers <span id="heart"><img src="https://www.semrush.com/static/images/accent-heart.e8d7e3e1289495e14365f7b64d55751c.svg" alt=""></span>Semrush </p>
+            <p>Here’s why marketers <span id="heart"><img
+                        src="https://www.semrush.com/static/images/accent-heart.e8d7e3e1289495e14365f7b64d55751c.svg"
+                        alt=""></span>Semrush </p>
             <div id="tags-1">
                 <button onclick="ChangeSlide(0)">Marketing suite</button>
                 <button onclick="ChangeSlide(1)">SEO</button>
@@ -550,12 +545,16 @@
         <div id="get-started">
             <p>Get started with Semrush today</p>
             <p>Get 7 days of full access to all toolkits. Cancel anytime.</p>
-            <button>Start your free trial</button>
+            <a href=""><button>Start your free trial</button></a>
         </div>
     </div>
 
 </body>
-
 </html>
-<script src="./index.js"></script>
+<script src="../scripts/index.js"></script>
+<script type="module">
+    import navbar from "../components/navbar.js"
+    document.querySelector("#navbar").innerHTML = navbar()
+
+</script>
 <!-- <script src="./c.js"></script> -->

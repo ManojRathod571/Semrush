@@ -55,6 +55,11 @@ const ChangeSlide = (index) => {
     crauser.style.backgroundColor = colors[index];
 }
 ChangeSlide(0);
+
+
+
+
+// ************************************************************************************
 let sliderCount = document.querySelector(".slider-count")
 let slide = document.getElementsByClassName("testomonial-div");
 console.log('slide:', slide.length)
@@ -82,6 +87,6 @@ const showSlides = (n) => {
     sliderCount.append(span)
     slide[state - 1].style.display = "block";
     crauser.style.backgroundColor = colors[state];
-    console.log("first")
+    console.log("first");
 }
 showSlides(state);
