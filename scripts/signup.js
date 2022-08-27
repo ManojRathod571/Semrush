@@ -1,10 +1,10 @@
-let userData = JSON.parse(localStorage.getItem("UserData")) || [];
+let userData = JSON.parse(localStorage.getItem("userData")) || [];
 
 let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
 
 
 if (checkflag == true) {
-      //window.location.href = ""
+    // window.location.href = ".html"
 }
 
 document.querySelector("form").addEventListener("submit", handleSignUp);
