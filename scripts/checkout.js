@@ -35,3 +35,21 @@ function redirect(){
 
 let email = JSON.parse(localStorage.getItem("email"));
 console.log("email:",email);
+
+
+
+//plan value append
+
+ 
+
+ localStorage.getItem("plan_of_subs");
+ //console.log("value:",value);
+ if("plan_of_subs"=="12 month")
+ {
+    document.getElementById("subs_plan").innerText="12 month";
+ }
+ else{
+    document.getElementById("subs_plan").innerText="month";
+ }
+
+

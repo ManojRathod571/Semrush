@@ -286,9 +286,8 @@
 </body>
 <script src="../scripts/project.js"></script>
 <script type="module">
-    import navbar from "../components/navbar.js"
-    document.querySelector("#navbar").innerHTML=navbar()
-    
-    
+   import {navbar,navbarJS,user_logout} from "../components/navbar.js"
+  document.querySelector("#navbar").innerHTML=navbar();
+   navbarJS()
 </script>
 </html>
