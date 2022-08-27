@@ -215,7 +215,7 @@ body{
     border: 1px solid grey;
  }
  #main2>div:nth-child(2)>div select{
-    width: 4vw;
+    width: 80px;
     height: 32px;
     margin-left: -6px;
     border-radius: 0 5px 5px 0;
@@ -268,11 +268,79 @@ body{
 
  .main3_content button{
     height: 4vh;
-    width: 10vw;
+    width: 150px;
     border-radius: 5px;
     border: transparent;
     background-color: dodgerblue;
     font-size: 16px;
     font-weight: 600;
     color: aliceblue;
+ }
+
+
+ /* media queries */ 
+
+ @media screen and (max-width:1200px){
+   #sidebar{
+      display: none;
+   }
+   #whole_page{
+      width: 100%;
+      display: block;
+   }
+   .main3_content button{
+      width: 150px
+   }
+   #main2>div:nth-child(2)>div select{
+      width:80px;
+      padding-left: 10px;
+   }
+   
+ }
+
+ @media screen and (max-width:770px){
+   #sidebar{
+      display: none;
+   }
+   #whole_page{
+      width: 100%;
+      display: block;
+   }
+   #main2>div:nth-child(2)>img{
+      display: none;
+   }
+   #main2>div:nth-child(2)>div:nth-child(2){
+      width: 100%;
+   }
+   #main3>div:nth-child(2)>div:nth-child(1){
+      display: none;
+   }
+   #main3>div:nth-child(2)>div:nth-child(2){
+      width: 100%;
+   }
+   #main2>div:nth-child(2)>div{
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+   }
+   #main2>div:nth-child(2)>div>input{
+      border-radius: 5px;
+      width: 93.5%;
+   }
+   #main2>div:nth-child(2)>div select{
+      width: 97%;
+      margin: auto;
+      border-radius: 5px;
+   }
+   #main2>div:nth-child(2)>div option{
+      width: 97%;
+      /* background-color: bisque; */
+   }
+   #main2>div:nth-child(2)>div button{
+      width: 97%;
+      margin: auto;
+   }
+   .main3_content button{
+      width: 100%;
+   }
  }
