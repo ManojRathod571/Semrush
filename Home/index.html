@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <!-- <link rel="stylesheet" href="./country.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
+     <!-- Iconscout Link For Icons -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- background-image-->
+        <div id="bg-1"></div>
+        <div id="bg-2"></div>
+        <!-- heading, sub-title, search-bar -->
+        <div id="sub-container">
+            <div>
+                <p id="heading">
+                    Get measurable results from online marketing
+                </p>
+                <p id="sub-heading">
+                    Do SEO, content marketing, competitor research,
+                    <br>
+                    PPC and social media marketing from just one platform.
+                </p>
+
+                <div id="search-box">
+                    <div id="wrapper-1">
+                        <span><input type="text" id="search-bar" placeholder="Enter domain, keyword or URL">
+                            <select name="" id="country">
+                                <option value="">India</option>
+                                <option value="">UK</option>
+                                <option value=""> USA</option>
+                                <option value=""> Japana</option>
+                                <option value="">anda</option>
+                                <option value="">Itly</option>
+                                <option value="">Frace</option>
+                                <option value="">Russia</option>
+                                <option value="">Japana</option>
+                            </select>
+                            <!-- <div class="wrapper">
+                                <div class="select-btn">
+                                  <span>Select Country</span>
+                                  <i class="uil uil-angle-down"></i>
+                                </div>
+                                <div class="content">
+                                  <div class="search">
+                                    <i class="uil uil-search"></i>
+                                    <input spellcheck="false" type="text" placeholder="Search">
+                                  </div>
+                                  <ul class="options"></ul>
+                                </div>
+                              </div> -->
+                        </span>
+                    </div>
+                    <button id="start-button">Start Now</button>
+                </div>
+                <p id="trusted">
+                    Trusted by the world’s leading brands
+                </p>
+
+            </div>
+        </div>
+
+        <!-- brand section -->
+
+        <div id="brand-slider">
+            <img src="https://cdn.semrush.com/static/index/logos/Tesla_logo.f58ace4c9fc6.svg" alt="">
+            <img src="https://cdn.semrush.com/static/index/logos/Decathlon_logo.867c20390207.svg" alt="">
+            <img src="https://cdn.semrush.com/static/index/logos/P&G_logo.310c6107f51e.svg" alt="">
+            <img src="https://www.youtube.com/watch?v=yLmpQr9HezE" alt="">
+            <img src="https://cdn.semrush.com/static/index/logos/IBM_logo.58ad03d7784d.svg" alt="">
+            <img src="https://cdn.semrush.com/static/index/logos/Quora_logo.38ca9be29021.svg" alt="">
+            <img src="https://cdn.semrush.com/static/index/logos/Vodafone_logo.699b394a72bf.svg" alt="">
+        </div>
+
+        <!-- Inside section -->
+
+        <p id="inside-tilte">See what's inside</p>
+        <div id="inside-container">
+            <div id="content-flex">
+                <div onclick="showContent(0)"><i class="fa-solid fa-gears"></i>
+                    <p>SEO</p><span></span>
+                </div>
+                <div onclick="showContent(1)"><i class=" fa-solid fa-file-lines"></i></i>
+                    <p>Content Marketing</p><span></span>
+                </div>
+                <div onclick="showContent(2)"><i class="fa-solid fa-people-group"></i>
+                    <p>Market Research</p><span></span>
+                </div>
+                <div onclick="showContent(3)"><i class="fa-solid fa-rectangle-ad"></i>
+                    <p>Advertising</p><span></span>
+                </div>
+                <div onclick="showContent(4)"><i class="fa-solid fa-icons"></i>
+                    <p>Social Media</p><span></span>
+                </div>
+                <div onclick="showContent(5)"><i class="fa-solid fa-print"></i>
+                    <p>Agency Solutions</p><span></span>
+                </div>
+            </div>
+
+            <div id="content-setion">
+                <div class="content-div">
+                    <div class="left-grid">
+                        <p>
+                            Grow organic traﬃc with our complete and easy SEO tools & workﬂow
+                        </p>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Uncover millions of national & local keywords</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Analyze any domain’s backlink profile</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Run technical SEO audits</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Track your SERP positions daily</p>
+                        </div>
+                        <button>Try SEO Toolkit</button>
+                    </div>
+                    <div class="right-grid">
+                        <img src="https://cdn.semrush.com/static/index/tools-new/seo.9edeeb0311e7.svg" alt="">
+                    </div>
+                </div>
+                <div class="content-div">
+                    <div class="left-grid">
+                        <p>
+                            Create content that ranks (no expert knowledge required)
+                        </p>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Find topics that resonate with your audience</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Get actionable tips to create SEO-friendly content</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Audit and improve your content based on real-time metrics</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Track brand mentions and content reach</p>
+                        </div>
+                        <button>Try Content Marketing Toolkit</button>
+                    </div>
+                    <div class="right-grid">
+                        <img src="https://cdn.semrush.com/static/index/tools-new/content_marketing.9ad3130035b8.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="content-div">
+                    <div class="left-grid">
+                        <p>
+                            Unveil your competitors’ marketing strategy and tactics
+                        </p>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Analyze traffic of any website</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Unveil competitor promotion strategies</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Get ideas for growing your market share</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Discover keyword & backlink gap</p>
+                        </div>
+                        <button>Try Competative Research Toolkit</button>
+                    </div>
+                    <div class="right-grid">
+                        <img src="https://cdn.semrush.com/static/index/tools-new/competitive_research.122052b6bfb5.svg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="content-div">
+
+                    <div class="left-grid">
+                        <p>
+                            Discover how to reach more prospects while spending less
+                        </p>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Find the best keywords for every PPC campaign</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Monitor your competitor’s ad copies and landing pages</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Optimize your Advertising spend (at a local level)</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Analyze Google Shopping ad campaigns</p>
+                        </div>
+                        <button>Try Advertising Toolkit</button>
+                    </div>
+                    <div class="right-grid">
+                        <img src="https://cdn.semrush.com/static/index/tools-new/ppc.eaa8c2b3f058.svg" alt="">
+                    </div>
+                </div>
+                <div class="content-div">
+                    <div class="left-grid">
+                        <p>
+                            Build your most effective social media strategy
+                        </p>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Schedule and post content on social media</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Analyze the performance of your posts</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Track & analyze competitor accounts</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Create & optimize social ads</p>
+                        </div>
+                        <button>Try Social Media Toolkit</button>
+                    </div>
+                    <div class="right-grid">
+                        <img src="https://cdn.semrush.com/static/index/tools-new/social_media.044a788fef8f.svg" alt="">
+                    </div>
+                </div>
+                <div class="content-div">
+                    <div class="left-grid">
+                        <p>
+                            Get quality leads regularly
+                        </p>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Automate client reporting and pitching</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Create white-label client portals and share project progress details</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Manage the entire client workflow with CRM</p>
+                        </div>
+                        <div>
+                            <p class="bullet-point"></p>
+                            <p>Track your SERP positions daily</p>
+                        </div>
+                        <button>Try Agency Toolkit</button>
+                    </div>
+                    <div class="right-grid">
+                        <img src="https://cdn.semrush.com/static/index/tools-new/agency.9513631c9490.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- background-image -->
+        <div id="bg-3">
+        </div>
+        <!-- Review setions-->
+        <div id="review-section">
+            <p>“Semrush is like a keyword research tool, Google Trends, Moz, Hootsuite and SimilarWeb in one.”</p>
+            <div class="reviewer-detail">
+                <div>
+                    <img src="https://cdn.semrush.com/static/index/testimonials/Mario_Leon_Rojas.6062ad72d0c3.webp"
+                        alt="">
+                </div>
+                <span>Mario León Rojas</span>
+                <span>Performance Marketing Specialist, Banco del Sol</span>
+                <span>Source: Semrush G2 reviews</span>
+
+            </div>
+        </div>
+
+        <!-- Award setions-->
+        <div class="award-section">
+            <div class="award-heading">
+                <h1 class="first-heading">Award-winning tools trusted by the world’s leading companies</h1>
+            </div>
+            <div class="award-cards">
+                <div class="cards">
+                    <img id="img-1"
+                        src="https://www.semrush.com/static/images/heart.6e0968f39befa7d22627669dbe30ca2d.svg" alt="">
+                    <h1 class="count">10M</h1>
+                    <p class="card-heading">marketing professionals</p>
+                    <p class="card-desc">have already used Semrush</p>
+                </div>
+                <div class="cards">
+                    <img id="img-2"
+                        src="https://www.semrush.com/static/images/star.a549a5922da2063e08b7cdb942349fd9.svg" alt="">
+                    <h1 class="count">21</h1>
+                    <p class="card-heading">international awards</p>
+                    <p class="card-desc">as best SEO software suite</p>
+                </div>
+                <div class="cards">
+                    <img id="img-3"
+                        src="https://www.semrush.com/static/images/diamond.4699339fa7ac96d7fa266b427502e8e6.svg" alt="">
+                    <h1 class="count">30%</h1>
+                    <p class="card-heading">Fortune 500 <span> companies</span></p>
+                    <p class="card-desc">use Semrush as their go-to marketing tool</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- More-Insight -->
+        <div id="more-insight-containerr">
+            <div id="bg-4"></div>
+            <div class="more-insight">
+                <div class="insight-lg">
+                    <h1>More data. More insights</h1>
+                    <p>With the size of our SEO databases and speed of our backlink crawler, imagine what you can
+                        achieve if
+                        you have the insights your competitors don’t.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="insight-rg">
+                    <div>
+                        <h2>22B</h2>
+                        <p>keywords</p>
+                    </div>
+                    <div>
+                        <h2>43T</h2>
+                        <p>140</p>
+                    </div>
+                    <div>
+                        <h2>808M</h2>
+                        <p>domain profiles</p>
+                    </div>
+                    <div>
+                        <h2>140</h2>
+                        <p></p>geo databases
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Our CEO section -->
+        <div id="our-ceo">
+            <div><img src="https://cdn.semrush.com/static/index/Oleg_Shchegolev_in_hat.0ac9c95bbf09.webp" alt=""></div>
+            <div id="our-ceo-rg">
+                <p>Our CEO will eat his hat</p>
+                <p>... if you find another tool that lets you do all these things</p>
+                <div id="ceo-point-list">
+                    <div class="list">
+                        <!-- <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt=""> -->
+                        <!-- <p>Access over 22 billion keywords for 130 countries</p> -->
+                    </div>
+                    <div class="list">
+                        <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt="">
+                        <p>Access over 22 billion keywords for 130 countries</p>
+                    </div>
+                    <div class="list">
+                        <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt="">
+                        <p>Run in-depth website audit based on 130+ checks</p>
+                    </div>
+                    <div class="list">
+                        <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt="">
+                        <p>Get recommendations to improve your content to increase search rankings</p>
+                    </div>
+                    <div class="list">
+                        <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt="">
+                        <p>Track and analyze competitor websites and marketing strategies</p>
+                    </div>
+                    <div class="list">
+                        <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt="">
+                        <p>Create and track your PPC campaigns</p>
+                    </div>
+                    <div class="list">
+                        <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt="">
+                        <p>Draft, schedule and post content on social</p>
+                    </div>
+                    <div class="list">
+                        <img src="https://www.semrush.com/static/images/check.c740a961354242250074c7361b91b06d.svg"
+                            alt="">
+                        <p>Create and schedule white-labeled or branded reports</p>
+                    </div>
+                </div>
+                <button>
+                    Discover all Semrush features
+                </button>
+            </div>
+        </div>
+
+        <!-- image slider -->
+        <div id="image-slider">
+            <p>Here’s why marketers <span id="heart"><img src="https://www.semrush.com/static/images/accent-heart.e8d7e3e1289495e14365f7b64d55751c.svg" alt=""></span>Semrush </p>
+            <div id="tags-1">
+                <button onclick="ChangeSlide(0)">Marketing suite</button>
+                <button onclick="ChangeSlide(1)">SEO</button>
+                <button onclick="ChangeSlide(2)">Content Marketing</button>
+                <button onclick="ChangeSlide(3)">Market Research</button>
+                <button onclick="ChangeSlide(4)">Advertising</button>
+                <button onclick="ChangeSlide(5)">Social Media</button>
+            </div>
+            <div id="crauser">
+                <div id="crauser-arrow">
+                    <div class="left-arrow" onclick="Arrow(-1)"><img
+                            src="https://www.semrush.com/static/images/arrow.12607b55654b2945c45ca6bc28ca6b37.svg"
+                            alt=""></div>
+                    <p class="slider-count"></p>
+                    <div class="right-arrow" onclick="Arrow(1)"><img
+                            src="https://www.semrush.com/static/images/arrow.12607b55654b2945c45ca6bc28ca6b37.svg"
+                            alt=""></div>
+                </div>
+                <div id="testomonial">
+                    <div class="testomonial-div">
+                        <p>
+                            “I have used the PPC Keyword Tool to create ads for my clients. And those ads not only fit
+                            the
+                            client brief, but also have returned great results.”
+                        </p>
+                        <div id="testomonial-details">
+                            <div>
+                                <img src="https://cdn.semrush.com/static/index/testimonials/Esther_Gimenez.442e7b9c274a.jpg"
+                                    alt="">
+                            </div>
+                            <p class="name"> Ankitaa Gohain Dalmia</p>
+                            <p class="profile">
+                                Founder, Digital Content Strategist, AnksImage
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testomonial-div">
+                        <p>
+
+                            “My favorite part about Semrush is the power it has for competitive intelligence. It makes
+                            it easier to make savvy advertising decisions when you have more data.”
+
+                        </p>
+                        <div id="testomonial-details">
+                            <div>
+                                <img src="https://cdn.semrush.com/static/index/testimonials/Fabrizio_Ballarini.70ae6db20432.jpg"
+                                    alt="">
+                            </div>
+                            <p class="name"> Ankitaa Gohain Dalmia</p>
+                            <p class="profile">
+                                Founder, Digital Content Strategist, AnksImage
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testomonial-div">
+                        <p>
+
+                            “I love the feature that lets you analyze the keyword and backlink gap with your
+                            competitors. This is very useful in determining which keywords you aren't ranking for, that
+                            you could be getting.”
+
+                        </p>
+                        <div id="testomonial-details">
+                            <div>
+                                <img src="https://cdn.semrush.com/static/index/testimonials/Judith_Lewis.d5c40fcacc36.jpg"
+                                    alt="">
+                            </div>
+                            <p class="name"> Ankitaa Gohain Dalmia</p>
+                            <p class="profile">
+                                Founder, Digital Content Strategist, AnksImage
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testomonial-div">
+                        <p>
+
+                            “Semrush has been pivotal in helping me better understand the competitive landscape of my ad
+                            campaigns. I have been able to close the gaps between my organic and paid efforts thus
+                            distributing my budget and tactics in a comprehensive manner.”
+
+                        </p>
+                        <div id="testomonial-details">
+                            <div>
+                                <img src="https://cdn.semrush.com/static/index/testimonials/Vashishtha_Kapoor.47648a8c7614.jpg"
+                                    alt="">
+                            </div>
+                            <p class="name"> Ankitaa Gohain Dalmia</p>
+                            <p class="profile">
+                                Founder, Digital Content Strategist, AnksImage
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testomonial-div">
+                        <p>
+
+                            “My favorite feature is the PPC analysis tool. It tells me what kinds of PPC ads are being
+                            run by a specific domain. It is good to optimize my own PPC strategy!”
+
+                        </p>
+                        <div id="testomonial-details">
+                            <div>
+                                <img src="https://cdn.semrush.com/static/index/testimonials/Andrea_Cruz.135a4ed74190.jpg"
+                                    alt="">
+                            </div>
+                            <p class="name"> Ankitaa Gohain Dalmia</p>
+                            <p class="profile">
+                                Founder, Digital Content Strategist, AnksImage
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testomonial-div">
+                        <p>
+
+                            “With Semrush, I have found weaknesses in PPC for pitches where I was only covering SEO.
+                            I've found clients' new competitors they didn't realise they had and keywords they could
+                            target.”
+
+                        </p>
+                        <div id="testomonial-details">
+                            <div>
+                                <img src="https://cdn.semrush.com/static/index/testimonials/Dignorah_Altamiranda.b11feb049b87.jpg"
+                                    alt="">
+                            </div>
+                            <p class="name"> Ankitaa Gohain Dalmia</p>
+                            <p class="profile">
+                                Founder, Digital Content Strategist, AnksImage
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Get started -->
+        <div id="get-started">
+            <p>Get started with Semrush today</p>
+            <p>Get 7 days of full access to all toolkits. Cancel anytime.</p>
+            <button>Start your free trial</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./index.js"></script>
+<!-- <script src="./c.js"></script> -->
