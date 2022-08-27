@@ -134,6 +134,61 @@ for (i = 0; i < coll1.length; i++) {
 }
 
 
+let sliderCount = document.querySelector(".slider-count")
+let slide = document.getElementsByClassName("testomonial-div");
+console.log('slide:', slide.length)
+let state = 1;
+
+function Arrow(n) {
+    showSlides(state += n);
+    console.log("clicked")
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+
+const showSlides = (n) => {
+    sliderCount.innerHTML = null
+    if (n > slide.length) { state = 1 };
+    if (n < 1) { state = slide.length };
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+    }
+    let span = document.createElement("span")
+    span.innerText = `${state} / 5`
+    sliderCount.append(span)
+    slide[state - 1].style.display = "block";
+    crauser.style.backgroundColor = colors[state];
+    console.log("first");
+}
+showSlides(state);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function funredirect(){
   location.href="checkout.html";
 }
+
+
+
+
+
+
+
+
+
