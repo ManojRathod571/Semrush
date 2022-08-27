@@ -1,5 +1,4 @@
-  /* style for the css menu dropdown container */
-    body{
+ body{
         margin: 0px;
         padding: 0px;
       }
@@ -125,21 +124,27 @@
            margin-top:10px ;
            width: max-content;
            color: #ffffff;
-           font-size: 13px;
+           font-size: 14px;
            font-weight: 400;
-           line-height: 1;
+           line-height: 1.4;
         }
         #profile_div{
            margin: auto;
         }
-        #profile_container{
-          display: flex;
-          gap: 10px;
-         }
          #before_login{
-          display: flex;
-          gap: 10px;
+         display: none;
+         }
+         #after_login{
+          display: block;
+         }
+        .profile_container{
+         display: flex;
+          gap: 15px;
           align-items: center;
+         }
+         #profile_div .menu-dropdown{
+            position: absolute;
+            left: -150px;
          }
          #login_btn{
           height: 65%;
@@ -158,8 +163,8 @@
            height: 65%;
            background-color: #00bc98;
            border: 1px solid #00bc98;
-          padding:6px 13px;
-          color:#fff;
+           padding:6px 13px;
+           color:#fff;
           font-size: 14px;
           border-radius: 6px;
           cursor: pointer;
@@ -167,4 +172,3 @@
           #signup_btn:hover{
              background-color: rgb(23, 163, 107);
           }
-         
