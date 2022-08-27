@@ -127,15 +127,12 @@ function navbar(){
 function navbarJS(){
   let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
   console.log(checkflag);
-  if(checkflag==true){
-    document.querySelector("#before_login").style.display=="none"
-    document.querySelector("#after_login").style.display == "block"
-
-
-  }else{
-    document.querySelector("#after_login").style.display == "none"
-    document.querySelector("#before_login").style.display == "block"
-
+  if (checkflag == false) {
+    document.querySelector("#after_login").style.display = "none"
+    document.querySelector("#before_login").style.display = "block"
+  } else {
+    document.querySelector("#before_login").style.display = "none"
+    document.querySelector("#after_login").style.display = "block"
   }
   
 }
