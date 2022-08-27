@@ -29,8 +29,9 @@ function animatedtoggle(){
     toggle.classList.toggle("active");
     if(toggle.classList.contains("active"))
     {
+     
+      localStorage.setItem("plans","Every 12 Months");
       console.log("12 year");
-      localStorage.setItem("plan_of_subs","12 month");
         dollar.innerHTML="$99";
         or.innerHTML=null;
         subs.innerHTML=null;
@@ -44,8 +45,7 @@ function animatedtoggle(){
     }
     else{
       
-      console.log("month")
-      localStorage.setItem("year","month");
+      
         dollar.innerHTML="$119";
         or.innerHTML="or";
         subs.innerHTML="Subscribe";
@@ -172,9 +172,14 @@ showSlides(state);
 
 
 //redirect checkout page
+
 function funredirect(){
+  localStorage.setItem("plans","Monthly")
+  console.log("months")
   location.href="checkout.html";
 }
+
+
 
 
 
