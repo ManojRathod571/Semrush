@@ -143,12 +143,12 @@
         #profile_div{
            margin: auto;
         }
-         #before_login{
-         display: none;
+         /* #before_login{
+         display: block;
          }
          #after_login{
-          display: block;
-         }
+          display: none;
+         } */
         .profile_container{
          display: flex;
           gap: 15px;
@@ -303,7 +303,7 @@
                         <a href=""><p>Queries</p></a>
                         <a href=""><p>Public profile</p></a>
                         <a href=""><p>API</p></a>
-                        <a href="index.html"><p onclick="user_logout()">Log out</p></a>
+                        <p id="logoutbtn" onclick=user_logout()>Log out</p>
                      </div>
                    </div>
               </div>
@@ -312,4 +312,31 @@
       </div>
     </div>
 </html>
-<script></script>
+<script>
+   navbarJS()
+  function navbarJS(){
+    console.log("gagan")
+  let checkflag =localStorage.getItem("authentication") || false;
+  
+  console.log(checkflag);
+
+  if(checkflag === "false"){
+    console.log("Jindal")
+    document.querySelector("#after_login").style.display = "none"
+    document.querySelector("#before_login").style.display = "block"
+  } else {
+    document.querySelector("#before_login").style.display = "none"
+    document.querySelector("#after_login").style.display = "block"
+  }
+  
+}
+
+
+function user_logout() {
+  console.log("gagan")
+  localStorage.setItem("authentication", false);
+  //  window.location.href = "index.html";
+  document.querySelector("#after_login").style.display = "none"
+  document.querySelector("#before_login").style.display = "block"
+}
+</script>
