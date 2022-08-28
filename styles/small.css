@@ -16,20 +16,20 @@
     font-family: 'Inter',sans-serif;
 }
 
-.small{
+ .smallandmedscreen .small{
     background-color:#111317;
     height:244px;
     width:auto;
     display:flex;
     flex-direction: column;
 }
-.icon{
+ .smallandmedscreen .icon{
     height: 42px;
     width:100%;
     display:flex;
     margin:7px 0 40px 0;
 }
-.locicon{
+ .smallandmedscreen .locicon{
     height:36px;
     width:100%;
     color:#898D9A;
@@ -37,11 +37,11 @@
     margin-bottom: 20px;
     margin-right:-5px;
 }
-.locicon>i{
+ .smallandmedscreen .locicon>i{
     color:#898D9A;
     margin-left:10px;
 }
-.contactbtn{
+.smallandmedscreen .contactbtn{
     border:1px solid #898D9A;
     height:44px;
     width: 340px;
@@ -55,16 +55,16 @@
     font-size: 13px;
     margin-bottom: 20px;
 }
-.contactbtn>a{
+.smallandmedscreen .contactbtn>a{
     text-decoration: none;
     color:#898D9A;
     
 }
-.contactbtn>a>i{
+.smallandmedscreen .contactbtn>a>i{
     margin-left: 10px;
     margin-right: 10px;
 }
-.langchnage{
+.smallandmedscreen .langchnage{
     border:1px solid #898D9A;;
     height:44px;
     width: 340px;
@@ -74,7 +74,7 @@
     font-size:13px;
     text-align: left;
 }
-.icon>a{
+.smallandmedscreen .icon>a{
     border:1px solid #898D9A;
     display:flex;
     align-items:center;

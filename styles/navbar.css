@@ -27,16 +27,17 @@
         display: flex;
         align-items: center;
         gap: 20px;
-        justify-content: left
+        justify-content:left
       }
-      #nev_menu_link>a{
+     #main_navBar_div #nev_menu_link>a{
         background: transparent;
         border: none;
         outline: 0;
         display: block;
         color: #a1a6af;
         text-decoration: none;
-        padding: 5px;
+        padding:5px;
+        /* margin-top: -6px; */
       }
       .menu {
         position: relative;

@@ -15,15 +15,20 @@
              background-size:90%;
             /* background-attachment: fixed; */
             background-repeat: no-repeat;
-            background-position: -380px -200px;
+            background-position: -350px -200px;
         }
 
         #signupin_container {
             width: 100%;
             height: 100%;
-          
         }
-
+          #signupLogo{
+            padding: 15px;
+        }
+        #signupLogo>img{
+            margin: 20px auto auto 30px;
+            width: 155px;
+        }
         #signup_main {
             width: 100%;
             display: grid;
@@ -38,22 +43,53 @@
             padding-left: 10%;
             padding-right: 10%
         }
+    
         #signup_form button{
             width: 100%;
+            margin-bottom:20px;
+            height: 48px;
+            border-radius: 6px;
+            font-size: 18px;
         }
+        #google_login{
+            background-color: #fff;    
+            border:1px solid #a1a6af;
+            display: flex;
+            align-items: center;
+        }
+        #signupbtn{
+           background-color: #ff642d;
+           border: 1px solid #ff642d;
+           color: #edf2f9;   
+         }
+         #signupbtn:hover{
+            background-color: #e05628;;
+         } 
          #signup_form input{
             width: 92%;
-            padding: 10px;
-            outline: none;
+            padding: 12px;
+            border:1px solid #a1a6af;
+            border-radius: 6px ;
+            margin-bottom: 15px;
+            font-size: 18px;
         }
           #signup_form input:focus{
             outline: 3px solid #80bdff;
-
+            border: 1 px solid #a1a6af;
           }
+          label{
+            display: block;
+            margin-bottom:15px;
+            }
+            #side_image{
+                margin: auto;
+                display: flex;
+                justify-content: right;
+            }
         #side_image>img {
-            width: 90%;
+            width: 60%;
         }
-
+        
         #dividing_line {
             width: 100%;
             text-align: center;
@@ -84,19 +120,18 @@
                             alt="" /><span>Continue with Google</span>
                     </button>
                     <p id="dividing_line"><span>or</span></p>
-                    <label for="email">Email</label><br>
-                    <input id="mail" type="text" placeholder="E-mail" name="email" required /><br>
-                    <label for="password">Password</label><br>
-                    <input id="password" type="password" placeholder="Password" name="psw" required />
-                    <p id="forget">Forgot your password?</p>
-                    <button type="submit" class="btn">Create account</button>
+                    <label for="email">Email</label>
+                    <input id="mail" type="text"  name="email" required />
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="psw" required />
+                    <button type="submit" id="signupbtn">Create account</button>
                     <p>Already have an account? <span><a href="login.html">Log in</a></span></p>
                     <p>By creating your account, you agree to the <span><a href="">Terms of Service</a></span> and <span><a href="">Privacy Policy</a></span></p>
 
                 </form>
             </div>
             <div id="side_image">
-                <img src="https://www.semrush.com/static/images/semrushman.4deb494408156a6748f227586cd1491c.svg"
+                <img src="https://i.ibb.co/6w5gGqt/sertyu.png"
                     alt="" />
             </div>
         </div>
