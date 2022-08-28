@@ -17,6 +17,8 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/small.css">
     <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -581,17 +583,14 @@
             <p>Get 7 days of full access to all toolkits. Cancel anytime.</p>
             <a href="./login.html"><button>Start your free trial</button></a>
         </div>
+         <div id="footer"></div>
     </div>
-
+   
 </body>
 
 </html>
 <script src="../scripts/index.js"></script>
 <script type="module">
-    import { navbar, navbarJS, user_logout } from "../components/navbar.js"
-    document.querySelector("#navbar").innerHTML = navbar()
-    navbarJS()
-</script>
 <!-- slick -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
@@ -607,4 +606,11 @@
         arrows: false,
     });
 
+=======
+ import {navbar,navbarJS} from "../components/navbar.js"
+ import footer from "../components/footer.js"
+    document.querySelector("#navbar").innerHTML=navbar();
+    navbarJS()
+
+    document.querySelector("#footer").innerHTML=footer()
 </script>

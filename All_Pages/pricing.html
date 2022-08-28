@@ -49,7 +49,7 @@
           <div class="btnmain">
           <button class="mainbtn redirect"  onclick="funredirect()">Try for free</button></div>
           <div class="ordiv"> <div class="or">or  </div>
-          <button class="subs" onclick="funredirect()">Subscribe</button>
+          <button class="subs subshov" onclick="funredirect()">Subscribe</button>
        </div>
          
         
@@ -87,7 +87,7 @@
           <div class="btnmain">
           <button class="mainbtn" onclick="funredirect()">Try for free</button></div>
           <div class="ordiv"> <div class="or1">or  </div>
-          <button class="subs1" onclick="funredirect()">Subscribe</button>
+          <button class="subs1 subshov" onclick="funredirect()">Subscribe</button>
        </div>
          
         
@@ -125,7 +125,7 @@
           <div class="btnmain">
           <button class="mainbtn" onclick="funredirect()">Try for free</button></div>
           <div class="ordiv"> <div class="or2">or  </div>
-          <button class="subs2" onclick="funredirect()">Subscribe</button>
+          <button class="subs2 subshov" onclick="funredirect()">Try a custom Plan</button>
        </div>
          
         
@@ -184,7 +184,7 @@
       <button class="mainbtn" onclick="funredirect()">Try for free</button>
       <div class="ordiv ordiv1">
       <div class="or3">or</div>
-        <button class="subs3" onclick="funredirect()">Subscribe</button>
+        <button class="subs3 subshov" onclick="funredirect()">Subscribe</button>
       </div>
       
       </div>
@@ -203,7 +203,7 @@
       <button class="mainbtn" onclick="funredirect()">Try for free</button>
       <div class="ordiv ordiv1">
       <div class="or4">or</div>
-        <button class="subs4" onclick="funredirect()">Subscribe</button>
+        <button class="subs4 subshov" onclick="funredirect()">Subscribe</button>
 
       </div>
       </div>
@@ -222,7 +222,7 @@
       <button class="mainbtn" onclick="funredirect()">Try for free</button>
       <div class="ordiv ordiv1">
       <div class="or5">or</div>
-        <button class="subs5" onclick="funredirect()">Subscribe</button>
+        <button class="subs5 subshov" onclick="funredirect()">Try a custom Plan</button>
 </div>
       
       </div>
@@ -1412,8 +1412,10 @@ Am I charged when I enter my credit card?
 <script src="../scripts/pricing.js"></script>
 
 <script type="module">
-  import navbar from "../components/navbar.js"
-document.querySelector("#nav").innerHTML=navbar()
+
+  import {navbar,navbarJS} from "../components/navbar.js"
+    document.querySelector("#nav").innerHTML=navbar()
+    navbarJS()
 </script>
 
 

@@ -8,7 +8,7 @@
 
 
 
-
+//toggle
 let toggle=document.querySelector(".toggle");
 let dollar=document.querySelector(".dollar");
 let or=document.querySelector(".or");
@@ -23,14 +23,15 @@ let dollar2=document.querySelector(".dollar2");
 let or2=document.querySelector(".or2");
 let subs2=document.querySelector(".subs2");
 
-
+localStorage.setItem("plans","Monthly");
 
 function animatedtoggle(){
     toggle.classList.toggle("active");
     if(toggle.classList.contains("active"))
     {
+     
+      localStorage.setItem("plans","Every 12 Months");
       console.log("12 year");
-      
         dollar.innerHTML="$99";
         or.innerHTML=null;
         subs.innerHTML=null;
@@ -43,7 +44,9 @@ function animatedtoggle(){
         subs2.innerHTML=null;
     }
     else{
-      console.log("month")
+      
+      localStorage.setItem("plans","Monthly");
+      console.log("month");
         dollar.innerHTML="$119";
         or.innerHTML="or";
         subs.innerHTML="Subscribe";
@@ -102,7 +105,7 @@ function animatedtoggle1(){
 }
 }
 
-
+//collapse
 var coll = document.getElementsByClassName("flexp");
 var i;
 
@@ -134,6 +137,8 @@ for (i = 0; i < coll1.length; i++) {
 }
 
 
+
+//text slide show
 let sliderCount = document.querySelector(".slider-count")
 let slide = document.getElementsByClassName("testomonial-div");
 console.log('slide:', slide.length)
@@ -167,22 +172,14 @@ showSlides(state);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//redirect checkout page
 
 function funredirect(){
+
   location.href="checkout.html";
 }
+
+
 
 
 
