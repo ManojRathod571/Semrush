@@ -47,13 +47,14 @@
         margin: 0;
         outline: 0;
         text-align: left;
+        cursor: pointer;
       }
 
       /* style for the button */
-      #nev_menu_link>a:hover{
+      #main_navBar_div #nev_menu_link>a:hover{
          color: #ffffff;
       }
-        .menu>p{
+      .menu>p{
         color: #a1a6af;;
        }
     .menu>p:hover{
@@ -97,6 +98,7 @@
         width: auto;
         text-decoration: none;
         padding: 0px 20px ;
+        cursor: pointer;
       }
       .menu-dropdown>a>h3:hover , #langauage_div>.menu-dropdown>a>p:hover{
         color: #ff622d;

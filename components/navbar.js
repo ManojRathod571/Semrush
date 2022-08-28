@@ -113,7 +113,7 @@ function navbar(){
                         <a href=""><p>Queries</p></a>
                         <a href=""><p>Public profile</p></a>
                         <a href=""><p>API</p></a>
-                        <p id="logoutbtn">Log out</p>
+                        <a><p id="logoutbtn">Log out</p></a>
                      </div>
                    </div>
               </div>
