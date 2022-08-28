@@ -6,13 +6,10 @@
     }
 
                         * {
-                            margin: 0;
-                            padding: 0;
                             font-family: 'Inter',sans-serif;
-font-family: 'Nunito', sans-serif;
+                            font-family: 'Nunito', sans-serif;
                          }
-                        
-                        .main {
+                      .footerup .main {
                             height:75%;
                             width: 90%;
                             position: absolute;
@@ -21,7 +18,7 @@ font-family: 'Nunito', sans-serif;
                             transform:translate(-50%,-50%);
                         }
                         
-                        .mainup {
+                    .footerup .main .mainup {
                             height: 19%;
                             width: 96%;
                             margin:7px auto 32px auto;
@@ -30,22 +27,22 @@ font-family: 'Nunito', sans-serif;
                             
                         }
                         
-                        .mainupfirst {
+                    .footerup .mainup .mainupfirst {
                             display: flex;
                             align-items: center;
                             justify-content: center;
                         }
                     
-                        .signupbtn{
+                    .footerup .mainlast .signupbtn{
                             display: flex;
                             justify-content: center;
                             align-self:flex-end;
                         }
-                        #buttondowntxt{
+                      .footerup #buttondowntxt{
                             display:flex;
                             flex-wrap: wrap;
                         }
-                        .contbtn{
+                      .footerup .contbtn{
                             border: 1px solid #898D9A;
                             height:43px;
                             width:170px;
@@ -59,25 +56,25 @@ font-family: 'Nunito', sans-serif;
                             font-family:sans-serif;
                             font-weight:500;
                         }
-                        #emaillogo{
+                       .footerup #emaillogo{
                             color:#898D9A;
                             background-color: #898D9A;
                             height:20px;
                             width:20px;
                             margin-right: 5px;
                         }     
-                        .contbtn>img>p{
+                       .footerup .contbtn>img>p{
                             margin-left:4px;
                             text-decoration: none;
                         }
-                        .mainupsec{
+                       .footerup .mainupsec{
                             height: 29%;
                             width: 62%;
                             margin-left:25px;
                             color:#898D9A;
                             font-size: 12px;
                         }         
-                        .mainlast{
+                       .footerup .mainlast{
                             height:100%;
                             width: 29.5%;
                             margin-bottom: 16px;
@@ -87,14 +84,14 @@ font-family: 'Nunito', sans-serif;
                             justify-content: center;
                             margin:0 0 0 16px;
                         }
-                        .mainlast>a{
+                       .footerup .mainlast>a{
                             text-decoration: none;
                             height: 42px;
                             width: 338px;
                             min-height: auto;
                             min-width: auto;
                         }
-                        .signupbtn{
+                       .footerup .signupbtn{
                             height:100%;
                             width:100%;
                             text-align: center;
@@ -109,16 +106,16 @@ font-family: 'Nunito', sans-serif;
                             text-decoration: none;
                         }
                         
-                        #btndowntxt>u{
+                       .footerup #btndowntxt>u{
                             font-size: 12px;
                             font-weight:700;
                             color:#898D9A;
                             font-style: bold;
                         }
-                        .signupbtn:hover{
+                        .footerup .signupbtn:hover{
                             background-color:#008275;
                         }
-                        .maindown{
+                     .footerup .maindown{
                             height:70%;
                             width: 95%;
                             display: flex;
@@ -126,52 +123,52 @@ font-family: 'Nunito', sans-serif;
                             margin-right:auto;
                             justify-content: space-between;
                         }
-                        ul{
+                      .footerup .child ul{
                             list-style:none;
                         }
-                        h4{
+                      .footerup h4{
                             font-size:12px;
 
                         }
-                        .semrush{
+                       .footerup .semrush{
                             height:auto;
                             width:auto;
                             color: #898D9A;
 
                         }
-                        .helpcom{
+                       .footerup .helpcom{
                             height: auto;
                             width: auto;
                             color: #898D9A;
 
                         }
-                        .help{
+                       .footerup .help{
                             margin-bottom:30px;
                         }
                     
-                        .more{
+                      .footerup .more{
                             height: auto;
                             width: auto;
                             color: #898D9A;
                         }
-                        .company{
+                       .footerup .company{
                             height: auto;
                             width: auto;
                         }
-                        .followus {
-                            height: auto;
-                            width: auto;
-                            color: #898D9A;
-                        }
-                        .language{
+                       .footerup .followus {
                             height: auto;
                             width: auto;
                             color: #898D9A;
                         }
-                        .parent{
+                       .footerup .language{
+                            height: auto;
+                            width: auto;
+                            color: #898D9A;
+                        }
+                     .footerup .semrush .parent{
                             color:white;
                         }
-                        .child{
+                       .semrush .child{
                             color: #898D9A;
                         }
                         .footerup {
@@ -219,11 +216,15 @@ font-family: 'Nunito', sans-serif;
                             align-items: center;
                             margin-right: 10px;
                         }
+                         .child ul li{
+                            margin-left: -40px;
+                         }
                         .child ul li a{
                             color:#898D9A;
                             text-decoration: none;
                             font-size: 12px;
                             margin-bottom: 5px;
+                
                         }
                         .child ul li a:hover{
                             color:white;
@@ -264,3 +265,4 @@ font-family: 'Nunito', sans-serif;
                                 display: none;
                             }
                         }
+                        

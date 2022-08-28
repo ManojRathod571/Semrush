@@ -1,17 +1,6 @@
 // *****************************************  Insight functions **********************************************************
-let id;
 
-function debouncing(signup, delay) {
-    if (id) {
-      clearTimeout(id);
-    }
-  
-    id = setTimeout(() => {
-        signup();
-    }, delay);
-  }
-  
-const signup = () =>{
+function debouncing() {
     window.location.href = "signup.html";
 }
 
