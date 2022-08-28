@@ -141,6 +141,12 @@ function navbarJS(){
     localStorage.setItem("authentication", false);
     window.location.href = "index.html";
   })
-  
+  document.querySelector("#logo-div img").addEventListener("click",function(){
+    if(checkflag=="false"){
+      window.location.href = "index.html";
+    }else{
+      window.location.href = "project.html";
+    }
+  })
 }
 export { navbar, navbarJS }

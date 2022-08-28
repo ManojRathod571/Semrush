@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features</title>
     <link rel="stylesheet" href="../styles/feature.css">
-    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/navbar.css"> <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/small.css">
     <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -131,15 +132,18 @@
     </div>
 
     <!-- footer -->
-    <div>
+    <div id="footer">
         <!-- imported from js -->
     </div>
 
 </body>
 <script src="../scripts/feature.js"></script>
 <script type="module">
-    import {navbar,navbarJS} from "../components/navbar.js"
-    document.querySelector("#navbar").innerHTML=navbar()
+   import {navbar,navbarJS} from "../components/navbar.js"
+   import footer from "../components/footer.js"
+    document.querySelector("#navbar").innerHTML=navbar();
     navbarJS()
+
+    document.querySelector("#footer").innerHTML=footer()
 </script>
 </html>
