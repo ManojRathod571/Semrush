@@ -16,6 +16,7 @@ body {
 #container {
   background-color: #421983;
   height: 1300px;
+  margin-top: 50px;
 }
 #bg-container {
   width: 100%;
@@ -28,7 +29,7 @@ body {
   width: 805px;
   height: 805px;
   left: calc(50% + 240px);
-  top: -305px;
+  top: -250px;
   transform: rotate(-90deg);
   animation: image-load 1000ms ease-in;
 }
