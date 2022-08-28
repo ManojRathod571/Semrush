@@ -1,4 +1,21 @@
 // *****************************************  Insight functions **********************************************************
+let id;
+
+function debouncing(signup, delay) {
+    if (id) {
+      clearTimeout(id);
+    }
+  
+    id = setTimeout(() => {
+        signup();
+    }, delay);
+  }
+  
+const signup = () =>{
+    window.location.href = "signup.html";
+}
+
+
 let button = document.querySelectorAll("#content-flex div");
 let border = document.querySelectorAll("#content-flex span");
 console.log('border:', border.length)
@@ -96,3 +113,23 @@ const showSlides = (n) => {
     console.log("first");
 }
 showSlides(state);
+
+// *******************************************  brand image slider ****************************************************
+
+const brand1 = document.getElementById("brand-slider-1");
+const brand2 = document.getElementById("brand-slider-1");
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+
+  for (let i = 0; i < brand1.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
