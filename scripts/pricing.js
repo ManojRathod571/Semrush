@@ -75,11 +75,14 @@ let decimal2=document.querySelector(".decimal2");
 let dollar5=document.querySelector(".dollar5");
 let or5=document.querySelector(".or5");
 let subs5=document.querySelector(".subs5");
+localStorage.setItem("plans","Monthly");
 function animatedtoggle1(){
     toggle2.classList.toggle("active");
 
     if(toggle2.classList.contains("active"))
     {
+      localStorage.setItem("plans","Every 12 Months");
+      console.log("12 year");
         dollar3.innerHTML="$99";
         or3.innerHTML=null;
         subs3.innerHTML=null;
@@ -92,6 +95,8 @@ function animatedtoggle1(){
         subs5.innerHTML=null;
     }
     else{
+      localStorage.setItem("plans","Monthly");
+      console.log("month");
         dollar3.innerHTML="$119";
         or3.innerHTML="or";
         subs3.innerHTML="Subscribe";
