@@ -175,8 +175,7 @@ showSlides(state);
 //redirect checkout page
 
 function funredirect(){
-  //localStorage.setItem("plans","Monthly")
- // console.log("months")
+
   location.href="checkout.html";
 }
 
