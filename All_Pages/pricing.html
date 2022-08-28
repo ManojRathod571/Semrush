@@ -49,7 +49,7 @@
           <div class="btnmain">
           <button class="mainbtn redirect"  onclick="funredirect()">Try for free</button></div>
           <div class="ordiv"> <div class="or">or  </div>
-          <button class="subs" onclick="funredirect()">Subscribe</button>
+          <button class="subs subshov" onclick="funredirect()">Subscribe</button>
        </div>
          
         
@@ -87,7 +87,7 @@
           <div class="btnmain">
           <button class="mainbtn" onclick="funredirect()">Try for free</button></div>
           <div class="ordiv"> <div class="or1">or  </div>
-          <button class="subs1" onclick="funredirect()">Subscribe</button>
+          <button class="subs1 subshov" onclick="funredirect()">Subscribe</button>
        </div>
          
         
@@ -125,7 +125,7 @@
           <div class="btnmain">
           <button class="mainbtn" onclick="funredirect()">Try for free</button></div>
           <div class="ordiv"> <div class="or2">or  </div>
-          <button class="subs2" onclick="funredirect()">Subscribe</button>
+          <button class="subs2 subshov" onclick="funredirect()">Try a custom Plan</button>
        </div>
          
         
@@ -184,7 +184,7 @@
       <button class="mainbtn" onclick="funredirect()">Try for free</button>
       <div class="ordiv ordiv1">
       <div class="or3">or</div>
-        <button class="subs3" onclick="funredirect()">Subscribe</button>
+        <button class="subs3 subshov" onclick="funredirect()">Subscribe</button>
       </div>
       
       </div>
@@ -203,7 +203,7 @@
       <button class="mainbtn" onclick="funredirect()">Try for free</button>
       <div class="ordiv ordiv1">
       <div class="or4">or</div>
-        <button class="subs4" onclick="funredirect()">Subscribe</button>
+        <button class="subs4 subshov" onclick="funredirect()">Subscribe</button>
 
       </div>
       </div>
@@ -222,7 +222,7 @@
       <button class="mainbtn" onclick="funredirect()">Try for free</button>
       <div class="ordiv ordiv1">
       <div class="or5">or</div>
-        <button class="subs5" onclick="funredirect()">Subscribe</button>
+        <button class="subs5 subshov" onclick="funredirect()">Try a custom Plan</button>
 </div>
       
       </div>
@@ -1306,19 +1306,115 @@ Am I charged when I enter my credit card?
 
 
 
-
-
 <div id="lastsection">
 
+<div id="crauser">
+  <div id="crauser-arrow">
+      <div class="left-arrow" onclick="Arrow(-1)"><img
+              src="https://www.semrush.com/static/images/arrow.12607b55654b2945c45ca6bc28ca6b37.svg"
+              alt=""></div>
+      <p class="slider-count"></p>
+      <div class="right-arrow" onclick="Arrow(1)"><img
+              src="https://www.semrush.com/static/images/arrow.12607b55654b2945c45ca6bc28ca6b37.svg"
+              alt=""></div>
+  </div>
+  <div id="testomonial">
+      <div class="testomonial-div">
+          <p>
+             
+     "By using Semrush, my team saves a lot of time by working on the right content and in a more data-driven way. Everything we do here is backed up with data, and your tool is giving us more ammunition."
+      
+          </p>
+          <div id="testomonial-details">
+              
+              <p class="name">Idan Segal</p>
+              <p class="profile">
+                 Organic Growth Lead, Wix
+              </p>
+          </div>
+      </div>
+      <div class="testomonial-div">
+          <p>
+
+             
+        "The most important thing I can have really is data. Data is my currency. I need to support initiatives, business cases - any tools that give me insight I find incredibly useful. Semrush is a very solid package that delivers exactly that."
+      
+
+          </p>
+          <div id="testomonial-details">
+              
+              <p class="name">Nick Wilsdon</p>
+              <p class="profile">
+                  Product Owner, Search, Vodafone Group
+              </p>
+          </div>
+      </div>
+      <div class="testomonial-div">
+          <p>
+
+              
+        "Encouraged by our successes with Semrush software, I was asked to rollout Semrush to the rest of the university including all the faculties. With the help of Semrush, we empowered every single marketing team within the university to do what was done for the central sites."
+      
+
+          </p>
+          <div id="testomonial-details">
+              
+              <p class="name">Shegali Joshi</p>
+              <p class="profile">
+                  Marketing Optimization Analyst, Monash University
+              </p>
+          </div>
+      </div>
+      <div class="testomonial-div">
+          <p>
+
+            "The competition is really tough. It’s getting harder to compete for the top 3 positions when it comes to the most popular KWs. You have to really deep dive into keyword research to find those untapped opportunities. Semrush helps us get to the very bottom of it to identify new type of terms can really help to drive the demand."
+      
+          </p>
+          <div id="testomonial-details">
+             
+              <p class="name">James Gibbons</p>
+              <p class="profile">
+                 Growth Manager, Skyscanner
+              </p>
+          </div>
+      </div>
+      <div class="testomonial-div">
+          <p>
+
+              
+        "In the first 5 years of RockContent's existence Semrush has helped us to become Brazil's biggest digital marketing blog."
+      
+
+          </p>
+          <div id="testomonial-details">
+              
+              <p class="name">Vitor Pecanha</p>
+              <p class="profile">
+                 Co-Founder, Rock Content
+              </p>
+          </div>
+      </div>
+      
+
+  </div>
 </div>
+</div>
+</div>
+
+<div id="footer"></div>
+
+
+
+
 </body>
 </html>
 <script src="../scripts/pricing.js"></script>
 
 <script type="module">
-  import navbar from "../components/navbar.js"
-document.querySelector("#nav").innerHTML=navbar()
-
+  import {navbar,navbarJS} from "../components/navbar.js"
+    document.querySelector("#nav").innerHTML=navbar()
+    navbarJS()
 </script>
 
 

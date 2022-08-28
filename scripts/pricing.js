@@ -8,7 +8,7 @@
 
 
 
-
+//toggle
 let toggle=document.querySelector(".toggle");
 let dollar=document.querySelector(".dollar");
 let or=document.querySelector(".or");
@@ -29,8 +29,9 @@ function animatedtoggle(){
     toggle.classList.toggle("active");
     if(toggle.classList.contains("active"))
     {
+     
+      localStorage.setItem("plans","Every 12 Months");
       console.log("12 year");
-      
         dollar.innerHTML="$99";
         or.innerHTML=null;
         subs.innerHTML=null;
@@ -43,7 +44,8 @@ function animatedtoggle(){
         subs2.innerHTML=null;
     }
     else{
-      console.log("month")
+      
+      
         dollar.innerHTML="$119";
         or.innerHTML="or";
         subs.innerHTML="Subscribe";
@@ -102,7 +104,7 @@ function animatedtoggle1(){
 }
 }
 
-
+//collapse
 var coll = document.getElementsByClassName("flexp");
 var i;
 
@@ -134,6 +136,56 @@ for (i = 0; i < coll1.length; i++) {
 }
 
 
+
+//text slide show
+let sliderCount = document.querySelector(".slider-count")
+let slide = document.getElementsByClassName("testomonial-div");
+console.log('slide:', slide.length)
+let state = 1;
+
+function Arrow(n) {
+    showSlides(state += n);
+    console.log("clicked")
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+
+const showSlides = (n) => {
+    sliderCount.innerHTML = null
+    if (n > slide.length) { state = 1 };
+    if (n < 1) { state = slide.length };
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+    }
+    let span = document.createElement("span")
+    span.innerText = `${state} / 5`
+    sliderCount.append(span)
+    slide[state - 1].style.display = "block";
+    crauser.style.backgroundColor = colors[state];
+    console.log("first");
+}
+showSlides(state);
+
+
+
+//redirect checkout page
+
 function funredirect(){
+  localStorage.setItem("plans","Monthly")
+  console.log("months")
   location.href="checkout.html";
 }
+
+
+
+
+
+
+
+
+
+
+

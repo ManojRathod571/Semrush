@@ -132,4 +132,8 @@ justify-content: space-evenly;
 #lastp1{
     margin-left: -120px;
 }
+#user_email, #subs_plan{
+    margin-left: 8px;
+   color: #6c6e79;
+}
 
