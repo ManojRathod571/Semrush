@@ -6,6 +6,12 @@ let icons = document.querySelectorAll(".fa-solid");
 let content = document.querySelectorAll(".content-div");
 let heading = document.querySelectorAll("#content-flex > div > p")
 
+let checkflag = (localStorage.getItem("authentication")) || false;
+console.log(checkflag);
+if (checkflag !== "false") {
+    window.location.href="project.html"
+}
+
 function showContent(index) {
 
     border.forEach((item) => {
