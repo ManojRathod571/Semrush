@@ -23,7 +23,7 @@ let dollar2=document.querySelector(".dollar2");
 let or2=document.querySelector(".or2");
 let subs2=document.querySelector(".subs2");
 
-
+localStorage.setItem("plans","Monthly");
 
 function animatedtoggle(){
     toggle.classList.toggle("active");
@@ -45,7 +45,8 @@ function animatedtoggle(){
     }
     else{
       
-      
+      localStorage.setItem("plans","Monthly");
+      console.log("month");
         dollar.innerHTML="$119";
         or.innerHTML="or";
         subs.innerHTML="Subscribe";
@@ -174,8 +175,7 @@ showSlides(state);
 //redirect checkout page
 
 function funredirect(){
-  localStorage.setItem("plans","Monthly")
-  console.log("months")
+
   location.href="checkout.html";
 }
 
