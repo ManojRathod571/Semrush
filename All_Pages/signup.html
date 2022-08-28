@@ -10,6 +10,7 @@
         body {
             padding: 0%;
             margin: 0%;
+                font-family: sans-serif;
             background-color: #b880ff;
             background-image: url("data:image/svg+xml,%3Csvg width='1860' height='1900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1063.43 12.6364c367.16 45.007 687.98 304.0646 794.88 679.0506 3.46 11.402-3.7 23.608-15.24 26.616l-57.69 15.041c120.54 462.306-157.08 934.396-619.51 1054.966l15.02 57.61c3.01 11.53-4.16 23.73-15.82 26.28-49.7 11.73-99.44 19.33-148.84 23-22.388 3.12-49.462 4.71-81.749 4.71-444.176 0-809.937-314.15-908.1237-729.65-.0771-.29-.1482-.58-.213-.88-10.7156-45.42-17.9662-90.87-21.9148-136.07C1.6958 1004.77.4023.3519.4023.3519H948.027c50.826 0 88.603 4.2072 115.403 12.2845z' fill='%23fff'/%3E%3C/svg%3E");
              background-size:90%;
@@ -55,7 +56,9 @@
             background-color: #fff;    
             border:1px solid #a1a6af;
             display: flex;
+            gap: 45px;
             align-items: center;
+            padding:10px;
         }
         #signupbtn{
            background-color: #ff642d;
@@ -81,26 +84,65 @@
             display: block;
             margin-bottom:15px;
             }
+             #login_link{
+                color: #575c66;;
+             }
+            #login_link a{
+               color:#E05628;
+               text-decoration:none;
+            }
+             #login_link~p, #login_link~p a{
+           color: #a1a6af  
+        }
             #side_image{
                 margin: auto;
                 display: flex;
                 justify-content: right;
             }
         #side_image>img {
-            width: 60%;
+            width: 80%;
+            margin-top: -50px;
         }
         
         #dividing_line {
             width: 100%;
             text-align: center;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #d6dae2;
             line-height: 0.1em;
             margin: 10px 0 20px;
+            color: #a1a6af;
         }
-
+   
         #dividing_line span {
             background: #fff;
             padding: 0 20px;
+            color: #a1a6af;
+        }
+         @media screen and (max-width:800px) {
+            #side_image{
+                display: none;
+            }
+            body{
+                background-color: white;
+            }
+            #signup_form {
+            margin: auto;
+            padding-left: 10%;
+            padding-right: 10%;
+            /* border: 2px solid red; */
+            font-style: arial;
+            /* text-align: center; */
+            margin: auto;
+            /* width: 100%; */
+            margin: auto;
+        }
+         #signup_main {
+            width: 100%;
+            display: flex;
+            /* grid-template-columns: 1fr 0.7fr; */
+            justify-content: center;
+            margin: auto;
+        }
         }
     </style>
 </head>
@@ -125,7 +167,7 @@
                     <label for="password">Password</label>
                     <input id="password" type="password" name="psw" required />
                     <button type="submit" id="signupbtn">Create account</button>
-                    <p>Already have an account? <span><a href="login.html">Log in</a></span></p>
+                    <p id="login_link">Already have an account? <span><a href="login.html">Log in</a></span></p>
                     <p>By creating your account, you agree to the <span><a href="">Terms of Service</a></span> and <span><a href="">Privacy Policy</a></span></p>
 
                 </form>
