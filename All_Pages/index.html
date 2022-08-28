@@ -11,6 +11,8 @@
     <title>Document</title>
     <!--  -->
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/small.css">
     <script src="https://kit.fontawesome.com/cdebd35493.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -547,13 +549,17 @@
             <p>Get 7 days of full access to all toolkits. Cancel anytime.</p>
             <a href=""><button>Start your free trial</button></a>
         </div>
+         <div id="footer"></div>
     </div>
-
+   
 </body>
 </html>
 <script src="../scripts/index.js"></script>
 <script type="module">
  import {navbar,navbarJS} from "../components/navbar.js"
+ import footer from "../components/footer.js"
     document.querySelector("#navbar").innerHTML=navbar();
     navbarJS()
+
+   document.querySelector("#footer").innerHTML=footer()
 </script>
