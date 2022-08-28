@@ -113,7 +113,7 @@ function navbar(){
                         <a href=""><p>Queries</p></a>
                         <a href=""><p>Public profile</p></a>
                         <a href=""><p>API</p></a>
-                        <a href="index.html"><p onclick="user_logout()">Log out</p></a>
+                        <p id="logoutbtn">Log out</p>
                      </div>
                    </div>
               </div>
@@ -125,20 +125,22 @@ function navbar(){
 }
 
 function navbarJS(){
-  let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
+  let checkflag =(localStorage.getItem("authentication")) || false;
   console.log(checkflag);
-  if (checkflag == false) {
+  if (checkflag === "false") {
     document.querySelector("#after_login").style.display = "none"
     document.querySelector("#before_login").style.display = "block"
   } else {
     document.querySelector("#before_login").style.display = "none"
     document.querySelector("#after_login").style.display = "block"
   }
+
+
+
+  document.querySelector("#logoutbtn").addEventListener("click", function () {
+    localStorage.setItem("authentication", false);
+    window.location.href = "index.html";
+  })
   
 }
-function user_logout() {
-  localStorage.setItem("authentication", false);
-   window.location.href = "index.html";
-}
-
-export { navbar, navbarJS, user_logout }
+export { navbar, navbarJS }
