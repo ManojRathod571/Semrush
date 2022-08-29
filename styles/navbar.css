@@ -181,9 +181,14 @@
               display: none;
             }
             #main_navBar_div{
-              display: flex;
-              justify-content:space-between;
-            }
+                background-color: #111317; 
+                height: 55px; 
+                padding-left: 5%;
+                padding-right: 5%;
+                display:flex;
+                align-items: center;
+                justify-content:space-between;
+                    }
             #profile_div{
               justify-self: flex-end;
             }

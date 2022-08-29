@@ -246,7 +246,9 @@
                         i{
                             margin-bottom: 10px;
                         }
-                        
+                        .parent h5{
+                            color: white;
+                        }
 
                         @media screen and (max-width:699px){
                             /* .smallandmedscreen{
