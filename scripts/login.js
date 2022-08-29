@@ -8,7 +8,9 @@ console.log(checkflag);
 if (checkflag == true) {
     window.location.href = "project.html"
 }
-
+document.querySelector("#loginLogo img").addEventListener("click",function(){
+    window.location.href="index.html"
+})
 document.querySelector("form").addEventListener("submit", handleCheckCredentials);
 
 function handleCheckCredentials(event) {

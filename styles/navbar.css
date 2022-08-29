@@ -175,3 +175,16 @@
           #signup_btn:hover{
              background-color: rgb(23, 163, 107);
           }
+
+          @media screen and (max-width:1300px) {
+            #nev_menu_link{
+              display: none;
+            }
+            #main_navBar_div{
+              display: flex;
+              justify-content:space-between;
+            }
+            #profile_div{
+              justify-self: flex-end;
+            }
+          }

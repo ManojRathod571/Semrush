@@ -1,7 +1,9 @@
 let userData = JSON.parse(localStorage.getItem("userData")) || [];
 
 let checkflag = JSON.parse(localStorage.getItem("authentication")) || false;
-
+document.querySelector("#signupLogo img").addEventListener("click", function () {
+    window.location.href = "index.html"
+})
 
 if (checkflag == true) {
     window.location.href = "project.html"
@@ -24,8 +26,8 @@ function handleSignUp(event) {
     }
       
     for (let i = 0; i < userData.length; i++) {
-        if (
-            userData[i].email == obj.email) {
+        if (userData[i].email == obj.email) {
+            flag=false
             localStorage.setItem("authentication", false);
             return alert("User Already Exists");
         }
@@ -33,6 +35,7 @@ function handleSignUp(event) {
     if (flag === true) {
         userData.push(obj);
         alert("SignUp Successfully")
+        window.location.href="project.html"
         localStorage.setItem("authentication", true);
         localStorage.setItem("userData", JSON.stringify(userData));
     }
